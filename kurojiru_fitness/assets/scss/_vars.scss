@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Scss Document */
+
+
+/*color*/
+
+$sub-color02: #dcdddd !default; //
+$w-color: #ffffff !default; //
+$text-color: #000000 !default; //
+$border-color: #bdbdbd;
+
+
+
+
+
+
+$main-color: #e4007f !default; //
+$sub-color: #e54f21 !default; //
+
+
+/* responsive */
+
+$breakpoints: (
+  'lg': 'screen and (min-width: 750px)',
+  'md': 'screen and (min-width: 750px)',
+  'smmax': 'screen and (max-width: 750px)'
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+

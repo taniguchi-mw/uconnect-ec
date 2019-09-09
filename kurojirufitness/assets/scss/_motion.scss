@@ -1,0 +1,17 @@
+@keyframes fixani {
+	0% {
+		transform: translate3d(0, -100px,0);
+	}
+	100% {
+		transform: translate3d(0, -100px,0);
+	}
+}
+
+@keyframes fixout {
+	0% {
+		transform: translate3d(0, -316px,0);
+	}
+	100% {
+		transform: translate3d(0, 0,0);
+	}
+}

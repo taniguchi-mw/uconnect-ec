@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /account/
+Disallow: /campaign/
+Disallow: /contact/
+Disallow: /shop/
+Sitemap: https://u-connect.jp/sitemap.xml

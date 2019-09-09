@@ -1,0 +1,87 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div>
+  <section id="f_navi" class="clearfix">
+    <div id="f_contact">
+      <p><a href="https://u-connect.jp/contact" target="_blank"><img src="../image/common/f_contact_form.png" alt="メール入力フォームへ"></a></p>
+      <p id="f_fax"><a href="../guide/flow/index.html#order_fax"><img src="../image/common/f_pdf.png" alt="注文用紙ダウンロード"></a></p>
+    </div>
+    <div>
+      <p><a href="../index.html">トップページ</a></p>
+      <p class="f_title">初めての方へ</p>
+      <ul>
+        <li><a href="../guide/flow/index.html">ご注文の流れ</a></li>
+        <li><a href="../guide/index.html">ご利用ガイド</a></li>
+        <li><a href="https://u-connect.jp/account/my_page_login">新規会員登録</a></li>
+      </ul>
+      <p class="f_title">会員の方へ</p>
+      <ul>
+        <li><a href="https://u-connect.jp/account/my_page_login">ログイン</a></li>
+        <li><a href="https://u-connect.jp/account/my_page_login">登録内容変更</a></li>
+        <li><a href="https://u-connect.jp/account/forget_password?controller_name=account">パスワード忘れ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="f_title">商品について</p>
+      <ul>
+        <li><a href="../midorimushi/index.html">ミドリムシエメラルド</a></li>
+        <li><a href="../emuoil/index.html">エミューの雫</a></li>
+        <li><a href="../allinonegel/index.html">オールインワンゲル石鹸</a></li>
+        <li><a href="../crystalsoap/index.html">クリスタル石鹸</a></li>
+        <li><a href="../bifidus_lactic/index.html">ビフィズス菌・乳酸菌</a></li>
+        <li><a href="../harp_seal_oil/index.html">ハープシールオイル</a></li>
+        <li><a href="../proteoglycan/index.html">プロテオグリカン<br>
+          すこやか</a></li>
+        <li><a href="../harp_seal_oil/index.html">40代からの俺のサプリ</a></li>
+      </ul>
+      <p><a href="../itemlist/index.html">商品一覧</a></p>
+    </div>
+    <div>
+      <p class="f_title"><a href="../teiki/index.html">便利でお得な定期便</a></p>
+      <ul>
+        <li><a href="../teiki/index.html#teiki_emerald">ミドリムシエメラルド</a></li>
+        <li><a href="../teiki/index.html#teiki_shizuku72">エミューの雫 72ml</a></li>
+        <li><a href="../teiki/index.html#teiki_shizuku15">エミューの雫 15ml<br>
+          お試しサイズ</a></li>
+        <li><a href="../teiki/index.html#teiki_allinonegel">オールインワンゲル</a></li>
+        <li><a href="../teiki/index.html#teiki_crystal">クリスタル石鹸</a></li>
+        <li><a href="../teiki/index.html#teiki_bf">ビフィズス菌・乳酸菌</a></li>
+        <li><a href="../teiki/index.html#teiki_harpseal">ハープシールオイル</a></li>
+        <li><a href="../teiki/index.html#teiki_proteoglycan">プロテオグリカン<br>
+          すこやか</a></li>
+        <li><a href="../teiki/index.html#teiki_orenosapuri">40代からの俺のサプリ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="f_title"><a href="../qanda/index.html">よくいただくご質問</a></p>
+      <ul>
+        <li><a href="../qanda/midorimushi/index.html">ミドリムシエメラルドについて</a></li>
+        <li><a href="../qanda/emuoil/index.html">エミューの雫について</a></li>
+        <li><a href="../qanda/crystal/index.html">クリスタル石鹸について</a></li>
+        <li><a href="../qanda/proteoglycan/index.html">プロテオグリカンすこやかについて</a></li>
+        <li><a href="../qanda/bifidus/index.html">ビフィズス菌・乳酸菌について</a></li>
+        <li><a href="../qanda/harpsealoil/index.html">ハープシールオイルについて</a></li>
+      </ul>
+      <p class="f_title"><a href="../guide/index.html">ご利用ガイド</a></p>
+      <ul>
+        <li><a href="../guide/index.html#guide_order">ご注文に関するガイド</a></li>
+        <li><a href="../guide/index.html#guide_qanda">ご注文に関するよくあるご質問・お困りの方へ</a></li>
+      </ul>
+    </div>
+    <div class="mr-0">
+      <p class="f_title">ユーコネクト</p>
+      <ul>
+        <li><a href="../company/index.html">会社案内</a></li>
+        <li><a href="https://u-connect.jp/contact" target="_blank">お問い合わせ</a></li>
+        <li><a href="../privacy_policy/index.html">個人情報保護方針</a></li>
+        <li><a href="../rules/index.html">特定商取引法に基づく表記</a></li>
+      </ul>
+      <p class="f_title">その他運営サイト</p>
+      <ul>
+        <li><a href="//midorimushi-emerald.com/" target="_blank"><img src="../image/common/bn_emerald_koushiki.png" width="180" height="65" alt="ミドリムシエメラルド公式サイト"></a></li>
+        <li><a href="//midorimushi-senka.com/" target="_blank"><img src="../image/common/bn_midorimushi_senka.png" width="180" height="65" alt="ミドリムシ専科"></a></li>
+        <li><a href="//emu-oil.asia/" target="_blank"><img src="../image/common/bn_emuoil_shop.png" width="180" height="65" alt="エミューオイルショップ"></a></li>
+      </ul>
+    </div>
+  </section>
+  <p id="copyright"> <small>Copyright &copy; 株式会社ユーコネクト. All Rights Reserved.</small> </p>
+</div>

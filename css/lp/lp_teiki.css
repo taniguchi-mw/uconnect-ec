@@ -1,0 +1,132 @@
+@charset "utf-8";
+/*==================================================================
+  定期便共通
+====================================================================*/
+
+/*========================================
+   Contents
+  ========================================*/
+#main {
+	background-color: #FFFFFF;
+}
+/*-------- lp_teiki_orderbtn --------*/
+.lp_teiki {
+	position:relative;
+	width:100%;
+}
+.lp_teiki_orderbtn {
+	margin: 0 auto 30px;
+	width: 96%;
+	height: auto;
+	max-width:514px;
+	text-align:center;
+	font-weight:bold;
+	color:#E6231E;
+}
+.teiki_at {
+	margin-bottom:30px;
+}
+.limit {
+    position:absolute;
+    width: 22%;
+    height: 9%;
+    left:66.5%;
+    top:45.5%;
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+}
+.limit .limit_year {
+    font-size: 18px;
+}
+.limit .limit_year br {
+	display:none;
+}
+.limit .limit_mark {
+    background: none;
+}
+@media screen and (max-width:960px) {
+    .limit {
+        font-size: 2.8vw !important;
+    }
+	.limit .limit_year {
+		font-size: 1.8vw;
+	}
+}
+@media screen and (max-width:894px) {
+    .limit {
+        top:44%;
+    }
+}
+@media screen and (max-width:800px) {
+    .limit {
+        top:43%;
+    }
+}
+@media screen and (max-width:640px) {
+    .limit {
+        top:41%;
+    }
+}
+@media screen and (max-width:320px) {
+    .limit {
+        top:40%;
+    }
+}
+
+
+/*==================================================================
+  ハープシールオイル
+====================================================================*/
+/*========================================
+  Header
+  ========================================*/
+.lp_header_teiki_harpseal {
+	background: #F22B7A;
+}
+.lp_header_teiki_harpseal h1 {
+	font-size:21px;
+	color:#FFF;
+}
+
+/*========================================
+   Contents
+  ========================================*/
+.lp_teiki_harpseal {
+	padding-top: 56% !important;
+	background: url(../../image/lp/teiki/hs_main_img01.png) top left no-repeat #FFF;
+	background-size:contain;
+}
+/*----- title -----*/
+.lp_teiki_hs_maintt {
+	text-align:center;
+	margin-bottom:30px;
+}
+
+/*==================================================================
+  ビフィズス菌・乳酸菌
+====================================================================*/
+/*========================================
+  Header
+  ========================================*/
+.lp_header_teiki_bifilac {
+	background: #F22B7A;
+}
+.lp_header_teiki_bifilac h1 {
+	font-size:21px;
+	color:#FFF;
+}
+
+/*========================================
+   Contents
+  ========================================*/
+.lp_teiki_bifilac {
+	padding-top: 56% !important;
+	background: url(../../image/lp/teiki/bl_main_img01.png) top left no-repeat #FFF;
+	background-size:contain;
+}
+/*----- title -----*/
+.lp_teiki_bl_maintt {
+	text-align:center;
+	margin-bottom:30px;
+}

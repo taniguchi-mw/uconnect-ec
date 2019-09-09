@@ -1,0 +1,675 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	リセット
+------------------------------------------------------------*/
+html {
+	overflow-y: scroll;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+	color: #000;
+}
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 0;
+	border: none;
+	margin: 0;
+	line-height: none;
+}
+input, select {
+	vertical-align: middle;
+}
+nav ul {
+	list-style: none;
+}
+ol, ul {
+	list-style: none;
+}
+img {
+	vertical-align: bottom;
+	font-size: 0;
+	line-height: 0;
+	border: 0;
+}
+li {
+	list-style-type: none;
+}
+a:focus {
+	outline: none !important;
+}
+/*----------------------------------------------------
+	基本設定、リンクカラーなど
+----------------------------------------------------*/
+body {
+	background: #F8F4E6;
+	border-top:3px solid #5F4746;
+	color: #565A57;
+	font-size: 1.000em;/*16px*/
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", verdana, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	overflow: hidden;
+}
+a {
+	color:#15BBBF;
+	text-decoration:none;
+}
+a:link {
+	color:#15BBBF;
+}
+a:visited {
+	color:#15BBBF;
+}
+a:hover {
+	color:#17D0D5;
+}
+a:active {
+	color:#17D0D5;
+}
+
+/*-----------------------------
+header
+-------------------------------*/
+#header {
+	padding:10px 0;
+}
+.headerGroup {
+	-webkit-display: flex;
+	display:flex;
+}
+.headerGroup img {
+	width: 100%;
+}
+.headerGroup h1 {
+	padding: 0 10px;
+	width: 40%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.headerGroup h1 a {
+	display:block;
+	margin: 0 auto;
+	padding: 5% 0 0;
+	width: 100%;
+	max-width: 169px;
+	max-height: 39px;
+}
+.shoppingGroup {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 60%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.shoppingGroup img {
+	max-width: 274px;
+	max-height: 57px;
+}
+#header nav#gnavi {
+}
+#header nav#gnavi ul {
+}
+#header nav#gnavi ul li a {
+}
+
+/*-----------------------------
+footer
+-------------------------------*/
+#footer {
+	background: #5F4746;
+	padding-top: 5px;
+}
+#footer h1 {
+}
+#footer nav.navi {
+	width:300px;
+	margin:0 auto;
+	font-size: 0.8em;
+}
+#footer nav.navi ul {
+}
+#footer nav.navi ul li {
+}
+#footer nav.navi ul li a {
+	background:none;
+	border:none;
+	color:#FFF;
+	text-decoration:none;
+	padding-bottom:5px;
+}
+#footer .logo {
+}
+#footer .copyright {
+	font-size: 0.8em;
+	color:#FFF;
+	opacity:0.5;
+	text-align: center;
+	margin-top: 10px;
+}
+#goto_pc {
+	width: 315px;
+	margin:5px auto;
+}
+#goto_pc a {
+	display:block;
+	padding:10px 10px 10px 25px;
+	text-align: center;
+	color:#67B3CB;
+	text-decoration: none;
+	background-image:
+	url(https://u-connect.jp/cart_only/images/sp_icon_pc.png),
+	 -moz-linear-gradient(
+		top,
+		#FFFFFF 0%,
+		#FFFFFF 50%,
+		#F7F7F7 75%,		
+		#EDEDED);		
+	background-image:
+	url(https://u-connect.jp/cart_only/images/sp_icon_pc.png),
+	 -webkit-gradient(
+		linear, left top, left bottom,
+		from(#FFFFFF),
+		color-stop(0.50, #ffffff),
+		color-stop(0.75, #F7F7F7),
+		to(#EDEDED));
+	background-repeat: no-repeat, repeat;
+	background-position: 15px center, left top;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #D7D7D7;
+	-moz-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	-webkit-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,0.3);	
+}
+
+
+/*-----------------------------
+各画面が読み込まれるエリア
+-------------------------------*/
+#content {
+	background:#fff;
+	padding:10px 10px 30px;
+}
+article.cart {
+}
+article#sho_disp {
+	background:#fff;
+	padding:10px;
+}
+.obi {
+}
+/*--- お知らせ ---*/
+.oshirase {
+	padding:10px;
+	margin:0 auto 5px;
+	border:1px solid #EEE;
+	font-size:0.8em;
+	line-height: 1.2em;
+}
+.oshirase_bdAt {
+	border: 1px solid #FF0000;
+}
+.oshirase p em {
+	color:red;
+}
+.oshirase_txt {
+	position:relative;
+	width:100%;
+	padding: 8px;
+	background-color: #2D66D1;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.oshirase_txt:before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-top: 9px solid #2D66D1;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+
+/*-----------------------------
+カート内リコメンドエリアここから
+-------------------------------*/
+article.cart article {
+}
+article.cart article section.back {
+	display:none;
+}
+
+/*-----------------------------
+#guide
+-------------------------------*/
+#guide {
+	min-height:	750px;/*ガイドの高さ+130px*/
+}
+#guide h1 {
+	background: #5F4746;
+	color:#FFF;
+	padding:5px 15px;
+	font-size: 1em;
+}
+/*--------タブ切り替え*/
+.tabbox {
+	width: 317px;
+	margin: 10px auto 0;
+	padding: 10px 0 0;
+	min-height: 302px;
+	font-size: 0.8em;
+	position: relative;
+}
+.tab-index ul {
+	width: 317px;
+	margin: 0 auto;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	overflow: hidden;
+}
+.tab-index ul li {
+	z-index: 1;
+	float: left;
+	padding: 8px 5px;
+	height: 34px;
+	margin-right: 2px;
+	list-style: none;
+	cursor: pointer;
+	background: -moz-linear-gradient(
+		top,
+		#F0A700 0%,
+		#F08200);		
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#F0A700),
+		to(#F08200));
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #F09500;
+	-moz-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	-webkit-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.tab-index ul li a {
+	display: block;
+	width: 100%;
+	color: #FFF;
+	line-height:1.4em;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+.tab-index ul li:nth-child(1) {
+	width: 65px;
+}
+.tab-index ul li:nth-child(2) {
+	width: 66px;
+}
+.tab-index ul li:nth-child(3) {
+	width: 91px;
+}
+.tab-index ul li:last-child {
+	width: 39px;
+	margin-left: 0px;
+}
+.tab-index ul li.active {
+	background:#ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	height:40px;
+}
+.tab-index ul li.active a {
+	color: #e4a456;
+	text-shadow:
+	0px -1px 0px rgba(000,000,000,0),
+	0px 1px 0px rgba(255,255,255,0.3);
+}
+.tab-contents {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	z-index: 0;
+	display: block;
+	width: 295px;/**/
+	height:620px;/*ガイドの高さ*/
+	padding:15px 10px 0;
+	background: #FFFFFF;
+	-moz-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	-webkit-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+}
+/*--------/タブ切り替え*/
+.tab-contents h3 {
+		line-height: 1.2em;
+padding: 0 0 10px;
+background: none;
+margin: 0;
+font-size: 1.2em;
+}
+.tab-contents h4 {
+font-size: 120%;
+	line-height: 1.2em;
+padding-bottom: 15px;
+color: #F08200;
+background: none;
+margin: 0;
+}
+.tab-contents p {
+	padding-bottom:10px;
+	line-height: 1.4em;
+}
+
+/*--------カレンダー*/
+/*======================================
+  cal.css
+  ======================================*/
+
+div.cal_wrapper {
+	padding: 0px;
+	font-weight: bold;
+	margin: 0 auto;
+	width: 230px;
+}
+div.schedule_wrapper {
+	padding: 10px 0px;
+	width: 310px;
+	border: solid 1px #CCC;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #666;
+}
+div.schedule_wrapper h3 {
+	padding: 0px 10px;
+	font-weight: normal;
+	margin: 0px;
+	color: #666;
+}
+div.schedule_wrapper div.schedule_list {
+	padding: 0px 10px;
+	margin: 0px;
+}
+div.schedule_wrapper div.schedule_list ol {
+	padding: 0px;
+	margin: 5px auto;
+	border-top: solid 1px #CCC;
+}
+div.schedule_wrapper div.schedule_list ol li {
+	padding: 5px 10px 0px 0px;
+	margin: 0px 0px 0px 30px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+div.schedule_wrapper div.schedule_list ol li:hover {
+	text-decoration: underline;
+}
+div.cal_wrapper table.cal tr th p {
+	float: left;
+	padding: 5px !important;
+	margin: 0px;
+	color: #5F4646;
+	/*font-size: 12px;*/
+}
+div.cal_wrapper table.cal tr th div.cal_ui {
+	float: right;
+	display:none;/* prev/next */
+}
+div.cal_wrapper table.cal tr th div.cal_ui input {
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	font-size: 12px;
+	margin: 7px 1px 0;
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td {
+	/* border-top: solid 1px #FFF; */
+}
+div.cal_wrapper table.cal tr td {
+	font-size: 12px;
+	text-align: center;
+	padding: 2px
+}
+div.cal_wrapper table.cal tr.headline td {
+	padding: 4px 6px;
+	color: #5F4646;
+	font-size: 12px;
+}
+div.cal_wrapper table.cal tr.headline {
+	background-color: #F8F4E6;
+}
+div.cal_wrapper table.cal tr td div {
+	position: relative;
+	padding: 4px 6px;
+	/*font-size: 10px;*/
+	text-align: center;
+	background-color: #FFF;
+	border-radius: 3px;
+	color: #5F4646;
+	border: 1px solid #efefef;
+}
+div.cal_wrapper table.cal tr td div span {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	display: none;
+	width: 180px;
+	border: solid 1px #EEE;
+	background-color: #FFF;
+	text-align: left;
+	padding: 5px;
+	z-index: 10;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 3px #666;
+}
+
+
+div.cal_wrapper table.cal tr td div.Sat {
+	color: #396CB8;
+}
+div.cal_wrapper table.cal tr td div.Sun {
+	color: #F3122D;
+}
+div.cal_wrapper table.cal tr td div.Today {
+	font-weight: bolder;
+	border: 1px solid #B2A266;
+}
+div.cal_wrapper table.cal tr td div.Deli {
+	background-color: #EFE;
+}
+div.cal_wrapper table.cal tr td div.Holyday {
+	font-weight: bolder;
+	color: #F3122D;
+	background-color: #FFE5E5;
+}
+div.cal_wrapper table.cal tr td div.Birthday {
+	font-weight: bolder;
+	background-color: #EEF;
+	color: #090;
+	border-radius: 3px;
+}
+
+div.cal_wrapper table.cal tr td div.backward {
+	color: #CCC;
+	font-weight: normal;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td div.pointer {
+	cursor: pointer;
+}
+div.cal_wrapper table.cal tr td div.pointer:hover {
+	background-color: #EEE;
+}
+
+#cal1 {
+	margin-top: 15px;
+}
+
+.img100 {
+    width: 100%;
+}
+/*--------/カレンダー*/
+
+/*-----------------------------
+#f_tel
+-------------------------------*/
+#f_tel {
+	width: 100%;
+	border-top:2px solid #685352;
+	color:#685352;
+	font-size: 0.8em;
+	line-height: 1.4em;	
+}
+#f_tel section {
+	width: 315px;
+	margin:10px auto;
+}
+#f_tel div {
+	width: 315px;
+	margin:5px auto;
+}
+#f_tel div a {
+	display:block;
+	padding:10px;
+	text-align: center;
+	background: -moz-linear-gradient(
+		top,
+		#FFFFFF 0%,
+		#FFFFFF 50%,
+		#F7F7F7 75%,		
+		#EDEDED);		
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#FFFFFF),
+		color-stop(0.50, #ffffff),
+		color-stop(0.75, #F7F7F7),
+		to(#EDEDED));
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #D7D7D7;
+	-moz-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	-webkit-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,0.3);	
+}
+
+
+/*--- 注文完了時追加表示URL ---*/
+#back_shop {
+	width:182px;
+	margin:10px auto;
+}
+#back_shop ul li {
+	padding-bottom: 10px;
+}
+#back_shop ul li a {
+	display:block;
+	width: 180px;
+	height:65px;
+	border:1px solid #EFEFEF;
+}
+#back_shop ul li a:hover, #back_shop ul li a:active {
+	opacity:0.7;
+}

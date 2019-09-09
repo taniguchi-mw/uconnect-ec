@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="ユーコネクト公式通販サイト｜ショッピングカート"/>
+<meta name="description" content="ユーコネクト公式通販サイト｜ショッピングカート"/>
+<meta name="author" content=""/>
+<meta name="copyright" content="" />
+<title>買い物カゴ</title>
+<link rev="made" href="//tamago.temonalab.com" />
+<link rel="index" href="//tamago.temonalab.com" />
+<link href="/stylesheets/import_plus.css?1378202985" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/plus-cart/SF/color.css?1378202985" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/devel.css?1378202985" media="screen" rel="stylesheet" type="text/css" />
+<script src="//u-connect.jp/javascripts/prototype.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/maintenance.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/scriptaculous.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/builder.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/external.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/heightLine.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/scrooll.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/backnumber.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/news.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/popup.js?1378202972" type="text/javascript"></script>
+<script src="//u-connect.jp/javascripts/yasuyuki.js?1378202972" type="text/javascript"></script>
+</head>
+
+<!--user stylesheets-->
+<style type="text/css">
+/**wrapper**/
+
+
+#head_wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+/*------------   end head style   ------------*/
+
+.success-message {
+	position: relative;
+	margin: 10px auto;
+}
+.success-message h1 {
+	color: #0088CC !important;
+	font-size: 115% !important;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	line-height: 1.2em;
+	background: none;
+	text-align: center;
+	width: 100% !important;
+}
+/*------------   start foot style   ------------*/
+
+/**wrapper & copyright**/
+#foot_wrapper {
+	width: 800px;
+	margin: 0 auto 40px auto;
+}
+#foot {
+	margin: 20px 0;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+#foot p.copy {
+	font-weight: bold;
+	float: left;
+	font-size: 11px;
+}
+#foot p.powerd {
+	float: right;
+}
+/**information area**/
+
+#usr_footer {
+	background: #CCC;
+}
+#usr_footer a {
+	color: #0000ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+#usr_footer a:hover {
+	color: #F60;
+}
+#usr_footer a img {
+	border-bottom: none;
+}
+#usr_footer table td {
+	background-color: #FFF;
+	vertical-align: top;
+}
+#usr_footer table p {
+	margin: 10px;
+}
+#usr_footer strong {
+	font-weight: bold;
+	color: #C70000;
+	line-height: 20px;
+}
+#usr_footer .right {
+	text-align: right;
+}
+/**wrapper**/
+#head_wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+/*------------   end head style   ------------*/
+
+
+
+/*------------   start foot style   ------------*/
+
+/**wrapper & copyright**/
+#foot_wrapper {
+	width: 800px;
+	margin: 0 auto 40px auto;
+}
+#foot {
+	margin: 20px 0;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+#foot p.copy {
+	font-weight: bold;
+	float: left;
+	font-size: 11px;
+}
+#foot p.powerd {
+	float: right;
+}
+/**information area**/
+
+#usr_footer {
+	background: #CCC;
+}
+#usr_footer a {
+	color: #0000ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+#usr_footer a:hover {
+	color: #F60;
+}
+#usr_footer a img {
+	border-bottom: none;
+}
+#usr_footer table td {
+	background-color: #FFF;
+	vertical-align: top;
+}
+#usr_footer table p {
+	margin: 10px;
+}
+#usr_footer strong {
+	font-weight: bold;
+	color: #C70000;
+	line-height: 20px;
+}
+#usr_footer .right {
+	text-align: right;
+}
+/*------------   ★カスタマイズ★   ------------*/
+
+/* header */
+body {
+	background-color: #F8F4E6;
+}
+a {
+	opacity: 1.0;
+}
+a:hover {
+	transition: opacity 0.1s linear;
+	-moz-transition: opacity 0.1s linear;
+	-webkit-transition: opacity 0.1s linear;
+	-o-transition: opacity 0.1s linear;
+	-ms-transition: opacity 0.1s linear;
+	opacity: 0.8;
+}
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+	border: none;
+}
+#head {
+	width: 980px;
+	height: 160px;
+	background: url(https://u-connect.jp/cart_only/images/h_bg.png) left 0 no-repeat;
+	position: relative;
+}
+#head h1 {
+	width: 940px;
+	height: 50px;
+	line-height: 48px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(https://u-connect.jp/cart_only/images/tt_bg.png) left top no-repeat;
+	color: #5F4746;
+	margin: 0;
+	padding: 0 0 0 40px;
+	font-size: 140%;
+	font-weight: bold;
+	text-align: left;
+}
+#logo {
+	width: 282px;
+	height: 39px;
+	position: absolute;
+	left: 0;
+	top: 35px;
+}
+#head_navi {
+	width: 110px;
+	height: 65px;
+	position: absolute;
+	left: 300px;
+	top: 23px;
+}
+#head_navi ul {
+	padding: 0;
+	margin: 0;
+	width: 110px;
+	height: 65px;
+	background-image: url(https://u-connect.jp/cart_only/images/h_navi.png);
+}
+#head_navi ul li {
+	width: 110px;
+	list-style: none;
+}
+#head_navi ul li.nv1 {
+	height: 40px;
+	margin-bottom: 5px;
+}
+#head_navi ul li.nv1 a {
+	padding-top: 5px;
+	height: 35px;
+	line-height: 1.2em;
+}
+#head_navi ul li.nv2, #head_navi ul li.nv2 a {
+	height: 20px;
+	line-height: 20px;
+}
+#head_navi ul li a {
+	display: block;
+	font-size: 87%;
+	width: 90px;
+	padding-left: 20px;
+	color: #5F4646;
+	font-size: 12px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+#h_fax a {
+	display: block;
+	width: 75px;
+	height: 23px;
+	position: absolute;
+	right: 0;
+	top: 19px;
+}
+#head + p {
+	padding: 10px 0;
+}
+/* body_wrapper */
+#body_wrapper {
+	margin: 0 auto 15px;
+	width: 980px;
+	background-color: #FFF;
+	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+#cart_body {
+	margin: 0 auto;
+}
+.cart-message {
+	margin: auto;
+}
+#pageback {
+	padding-left: 90px;
+}
+#product_body {
+	margin: 0 auto;
+}
+#body_title {
+	width: 800px;
+	margin: 0 auto;
+}
+/*-- f_guide --*/
+#pageback_shop {
+	padding: 0 0 15px;
+}
+#pageback_shop li {
+	width: 276px;
+	height: 68px;
+	float: left;
+	margin-right: 15px;
+	list-style: none;
+}
+#pageback_shop li a {
+	display: block;
+	width: 266px;
+	height: 58px;
+	padding: 5px;
+	background: #FFF;
+	text-align: center;
+	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+#pageback_shop li:nth-child(2) a {
+	background: url(https://u-connect.jp/cart_only/images/emuoil_shop_bg.jpg) left top repeat #FFF;
+}
+#f_guide {
+	width: 980px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 120%;
+}
+#f_guide div.fl_l {
+	width: 465px;
+	padding-right: 50px;
+	float: left;
+}
+#f_guide div.fl_r {
+	width: 465px;
+	float: left;
+}
+#f_guide h3 {
+	font-size: 147%;
+	padding: 30px 0;
+	background: none;
+	margin: 0;
+	width: 465px;
+}
+#f_guide h4 {
+	font-size: 120%;
+	padding-bottom: 15px;
+	color: #F08200;
+	background: none;
+	margin: 0;
+}
+#f_guide p {
+	padding-bottom: 15px;
+}
+#f_navi {
+	width: 980px;
+	border-top: 1px solid #FFF;
+	background: url(https://u-connect.jp/image/common/f_bg.png) left top repeat;
+	padding: 15px 0 10px;
+	text-align: center;
+}
+#f_navi ul {
+	text-align: center;
+	padding-bottom: 10px;
+}
+#f_navi ul li {
+	display: inline-block;
+	padding-right: 10px;
+	text-decoration: none;
+}
+#f_navi ul li a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+#copyright {
+	color: #FFF;
+	font-size: 12px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#goto_sp {
+	width: 94%;
+	margin: 5px auto 15px;
+}
+#goto_sp a {
+	display: block;
+	padding: 10px 10px 10px 25px;
+	font-size: 400%;
+	line-height: 200%;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background: -moz-linear-gradient( top, #F0A700 0%, #F08200);
+	background: -webkit-gradient( linear, left top, left bottom, from(#F0A700), to(#F08200));
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #F09500;
+	-moz-box-shadow: 1px 1px 3px rgba(000,000,000,0.2), inset 0px 0px 5px rgba(255,255,255,0.3);
+	-webkit-box-shadow: 1px 1px 3px rgba(000,000,000,0.2), inset 0px 0px 5px rgba(255,255,255,0.3);
+	box-shadow: 1px 1px 3px rgba(000,000,000,0.2), inset 0px 0px 5px rgba(255,255,255,0.3);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0), 0px 1px 0px rgba(255,255,255,0.3);
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-table;
+}
+.clear {
+	clear: both;
+}
+/*======================================
+  cal.css
+  ======================================*/
+
+div.cal_wrapper {
+	padding: 0px 0px 10px;
+	font-weight: bold;
+}
+div.schedule_wrapper {
+	padding: 10px 0px;
+	width: 310px;
+	border: solid 1px #CCC;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #666;
+}
+div.schedule_wrapper h3 {
+	padding: 0px 10px;
+	font-weight: normal;
+	margin: 0px;
+	color: #666;
+}
+div.schedule_wrapper div.schedule_list {
+	padding: 0px 10px;
+	margin: 0px;
+}
+div.schedule_wrapper div.schedule_list ol {
+	padding: 0px;
+	margin: 5px auto;
+	border-top: solid 1px #CCC;
+}
+div.schedule_wrapper div.schedule_list ol li {
+	padding: 5px 10px 0px 0px;
+	margin: 0px 0px 0px 30px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+div.schedule_wrapper div.schedule_list ol li:hover {
+	text-decoration: underline;
+}
+div.cal_wrapper table.cal tr th p {
+	float: left;
+	padding: 5px !important;
+	margin: 0px;
+	color: #5F4646;/*font-size: 12px;*/
+}
+div.cal_wrapper table.cal tr th div.cal_ui {
+	float: right;
+	display: none;/* prev/next */
+}
+div.cal_wrapper table.cal tr th div.cal_ui input {
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	font-size: 12px;
+	margin: 7px 1px 0;
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td {
+/* border-top: solid 1px #FFF; */
+}
+div.cal_wrapper table.cal tr td {
+	font-size: 12px;
+	text-align: center;
+	padding: 2px
+}
+div.cal_wrapper table.cal tr.headline td {
+	padding: 4px 6px;
+	color: #5F4646;
+	font-size: 12px;
+}
+div.cal_wrapper table.cal tr.headline {
+	background-color: #F8F4E6;
+}
+div.cal_wrapper table.cal tr td div {
+	position: relative;
+	padding: 4px 6px;
+	/*font-size: 10px;*/
+	text-align: center;
+	background-color: #FFF;
+	border-radius: 3px;
+	color: #5F4646;
+}
+div.cal_wrapper table.cal tr td div span {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	display: none;
+	width: 180px;
+	border: solid 1px #EEE;
+	background-color: #FFF;
+	text-align: left;
+	padding: 5px;
+	z-index: 10;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 3px #666;
+}
+div.cal_wrapper table.cal tr td div.Sat {
+	color: #396CB8;
+}
+div.cal_wrapper table.cal tr td div.Sun {
+	color: #F3122D;
+}
+div.cal_wrapper table.cal tr td div.Today {
+	font-weight: bolder;
+	border: 1px solid #B2A266;
+}
+div.cal_wrapper table.cal tr td div.Deli {
+	background-color: #EFE;
+}
+div.cal_wrapper table.cal tr td div.Holyday {
+	font-weight: bolder;
+	color: #F3122D;
+	background-color: #FFE5E5;
+}
+div.cal_wrapper table.cal tr td div.Birthday {
+	font-weight: bolder;
+	background-color: #EEF;
+	color: #090;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td div.backward {
+	color: #CCC;
+	font-weight: normal;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td div.pointer {
+	cursor: pointer;
+}
+div.cal_wrapper table.cal tr td div.pointer:hover {
+	background-color: #EEE;
+}
+#cal0, #cal1 {
+	width: 230px;
+	float: left;
+}
+#cal0 {
+	padding-right: 5px;
+}
+</style>
+
+
+
+
+
+<style type="text/css">
+<!--
+#reco {
+	text-align:left;
+	line-height:1.2em;
+	font-size:14px;
+}
+#reco_next p {
+	text-align:right !important;
+	margin:0;
+	padding:0;
+}
+#reco .tt {
+	color:#F08200;
+	font-weight:bold;
+	font-size:16px;
+	padding-bottom:10px;
+}
+
+#cs_list {
+	width:100%;
+	margin:0 auto;
+}
+#cs_list li {
+	float:left;	
+	width:200px;
+	list-style:none;
+	border:3px solid #CCC;
+	padding:8px;
+	margin-right:8px;
+}
+#cs_list li.last {
+margin-right: 0px;	
+}
+#cs_list li.camp {
+	border:3px solid #15BBBF;	
+}
+#cs_list li a img {
+	width:100%;
+}
+.reco_img a, .reco_img a:hover {
+	opacity: 1;
+}
+.orderbtn a {
+	background:url(https://u-connect.jp/image/common/link_w.gif) 10px 50% no-repeat #15BBBF;
+	padding:8px 0 8px 20px;
+	margin: 0 0 5px;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+	width:178px;
+	display:block;
+	font-size: 14px;
+	font-weight:bold;
+	text-decoration:none;		
+}
+.orderbtn a:hover {
+	background-color: #17D0D5;
+}
+.price {
+font-family:'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
+color:#C41A1A;
+font-weight:bold;
+font-size:26px;
+margin:5px 0 0;
+text-shadow:1px 1px 1px #FFFFFF;
+line-height:1em !important;
+}
+
+.ta-c{ text-align: center; }
+.td-t{ text-decoration: line-through; }
+.pt-5{ padding-top: 5px!important; }
+.pb-5{ padding-bottom: 5px!important; }
+.pb-10{ padding-bottom: 10px!important; }
+.fs-12 {
+	font-size:12px;
+}
+.fs-14 {
+	font-size:14px;
+}
+.fs-16 {
+	font-size:16px;
+}
+.fw-b {
+	font-weight:bold;
+}
+.fc-orb {
+	color: #FF6700;
+	font-weight: bold;
+}
+.fc-grb {
+	color:#8FAF2E;
+	font-weight:bold;	
+}
+.fc-redb {
+	color:#C41A1A;
+	font-weight:bold;
+}
+
+
+-->
+</style>
+
+<!--user stylesheets-->
+
+<body>
+<div id="wrapper">
+  <div id="head_wrapper"> 
+    <!--ヘッダ編集可能領域ここから--> 
+    
+    <!--ヘッダ編集可能領域ここから-->
+    <div id="head">
+      <h1>ユーコネクト公式通販サイト</h1>
+      <div id="logo"><a href="https://u-connect.jp/index.html"><img src="//u-connect.jp/cart_only/images/h_logo.png" width="282" height="39" alt="ユーコネクト" /></a></div>
+    </div>
+    <!--ヘッダ編集可能領域ここまで-->
+    
+    <p style="clear:both; color:red; font-size:12px;">発送業務は、土日祝日はお休みしております。いただいたご注文は、翌営業日に発送いたします。</p>
+    
+    <!--ヘッダ編集可能領域ここまで--> 
+    
+    <!--各画面が読み込まれるエリア-->
+    <div id="body_wrapper">
+      <div id="body_title">
+        <h2> <img alt="Cart_title01" src="//u-connect.jp/shop_data/cart_title01.gif?1378202973" /></h2>
+        <img alt="Cart_navi01" src="//u-connect.jp/shop_data/cart_navi01.gif?1378202973" /></div>
+      <form action="/order/check_login_no_ssl" method="post">
+        <div style="margin:0;padding:0">
+          <input name="authenticity_token" type="hidden" value="5de8225b1b7012b064d62824515cde9b9dc159c4" />
+        </div>
+        <div id="cart_body">
+          <div class="mgnB40" id="cart">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="preview">
+              <tr>
+                <td colspan="5" class="hr"></td>
+              </tr>
+              <tr>
+                <th class="cart01 ttl" style="width:275px;"><p class="cart_ttl1"><span class="none">カートに入っている商品</span></p></th>
+                <th class="cart01"><p class="cart_ttl2"><span class="none">単価</span></p></th>
+                <th class="cart01"><p class="cart_ttl3"><span class="none">注文数</span></p></th>
+                <th class="cart01"><p class="cart_ttl4"><span class="none">小計</span></p></th>
+                <th class="cart01 del"><p class="cart_ttl5"><span class="none">削除</span></p></th>
+              </tr>
+              <tr>
+                <td colspan="5" class="hr"></td>
+              </tr>
+              
+              <!--item loop start-->
+              <tr>
+                <td class="ttl">エミューム(EMUME)　5本セット</td>
+                <td class="alignR">23,500円</td>
+                <td id="select_order_qty_0" style="border: none;width: 38px;text-align: right;" rowspan="2"><select id="order_order_qty_0" name="order_0" onchange="new Ajax.Request('/shop/total_price_cal?item_id=26&amp;item_kind=order&amp;order_qty=1&amp;return_url=http%3A%2F%2Fu-connect.jp', {asynchronous:true, evalScripts:true, parameters:Form.serialize('body_wrapper') + '&amp;authenticity_token=' + encodeURIComponent('5de8225b1b7012b064d62824515cde9b9dc159c4')}); getElementById('order_order_qty_0').disabled=true;" style="width:50px">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                  </select></td>
+                <td class="alignR">23,500円</td>
+                <td class="del"><a href="/shop/delete_item?classification=order&amp;code=emume05&amp;delete_idx=0&amp;return_url=http%3A%2F%2Fu-connect.jp"><img alt="削除" src="//u-connect.jp/shop_data/cart_btn_del.gif?1378202974" /></a></td>
+              </tr>
+              <tr>
+                <td colspan="5" class="hr"></td>
+              </tr>
+              <!--item loop end-->
+              
+            </table>
+            <p class="total">合計金額：<span class="rd">23,500円</span></p>
+            <p class="total" style="margin-top:10px; text-align: center;"> <b style="font-size:21px;"> </b> </p>
+            <div id ="gift"> </div>
+          </div>
+          
+          <!--カート内リコメンドエリアここから--> 
+          
+          <!--カート内リコメンドエリアここまで-->
+          
+<div id="reco_next">@@button@@</div>
+
+<div id="reco">
+            <p class="tt">この商品を見た人はこんな商品もよく購入されています</p>
+            <ul id="cs_list" class="clearfix">
+              <li>
+                <p class="fw-b">エミューの雫 15ml 定期便</p>
+                <p class="fs-12">回数制限なし！楽々続けたい方へ</p>
+                <p class="price">¥2,300<span class="fs-12">&nbsp;(税別)</span><span class="fs-12 fc-orb
+      "> 送料無料！</span></p>
+                <p class="orderbtn"><a href="https://emu-oil.asia/order/shizuku15mltk.html?id=rc_15tk">ご注文・詳細はこちら</a></p>
+                <p class="reco_img">@@up_sell_1@@</p>
+              </li>
+              <li>
+                <p class="fw-b">エミューの雫 72ml 定期便</p>
+                <p class="fs-12">1本　<span class="td-t">¥6,500のところ</span></p>
+                <p class="price">¥5,250<span class="fs-12">&nbsp;(税別)</span><span class="fs-12 fc-orb
+      "> 送料無料！</span></p>
+                <p class="orderbtn"><a href="https://emu-oil.asia/order/shizukutk.html?id=rc_72tk">ご注文・詳細はこちら</a></p>
+                <p class="reco_img">@@up_sell_2@@</p>
+              </li>
+              <li class="last camp">
+                <p class="ta-c fc-redb pb-10 pt-5">ホントに今だけ！<br />
+                  ★増税前特別キャンペーン★</p>
+                <p class="ta-c pb-10">キャンペーン期間中に<br />
+                  便利でお得な<span class="fw-b">定期便</span>を<br />
+                  ご注文いただいた方へは、<br />
+                  増税後も<span class="fc-redb">【増税前のお値段】</span>で<br />
+                  ず～っとお届けします！</p>
+                <p class="ta-c fw-b pb-10">【キャンペーン：3月31日迄】</p>
+              </li>
+            </ul>
+          </div>
+          
+          
+          
+        </div>
+        <div id="pageback"> <a href="https://u-connect.jp"><img alt="＜商品ページへ戻る" src="//u-connect.jp/shop_data/cart_btn_back01.gif?1378202973" /></a> <a href="https://u-connect.jp"><img alt="＜お店のトップへ戻る" src="//u-connect.jp/shop_data/cart_btn_back02.gif?1378202972" /></a> </div>
+      </form>
+    </div>
+    
+    <!--end cart area-->
+    <input id="return_url" name="return_url" type="hidden" value="https://u-connect.jp" />
+    
+    <!--フッタカスタマイズ領域ここから--> 
+    
+    <!--デフォルトナビゲーションここまで-->
+    <div id="f_navi" class="clearfix"> 
+      <script type="text/javascript">
+if (((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)) {
+document.write('<p id="goto_sp"><a href="//u-connect.jp/shop/display_cart?pc=off">スマホ版カートはこちらから</a></p>');
+};
+</script>
+      <ul>
+        <li><a href="https://u-connect.jp/account/my_page_menu">マイアカウントページ</a></li>
+        <li><a href="https://u-connect.jp/index.html">公式通販サイトTOP</a></li>
+        <li><a href="https://u-connect.jp/privacy_policy_tc/index.html">個人情報保護方針</a></li>
+        <li><a href="https://u-connect.jp/rules_tc/index.html">特定商取引に基づく表記</a></li>
+        <li><a href="https://u-connect.jp/contact/index">お問い合わせ</a></li>
+      </ul>
+      <p id="copyright"><small>Copyright &copy; 株式会社ユーコネクト. All Rights Reserved.</small></p>
+    </div>
+    
+    <!--フッタカスタマイズ領域ここまで--> 
+    
+    <!--フッタカスタマイズ領域ここまで--> 
+    
+  </div>
+</div>
+
+<!-- sample order tags -->
+
+</body>
+</html>

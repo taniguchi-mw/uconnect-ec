@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+body,html {
+	width:100%;
+	height: 100%;
+}
+html {
+	line-height: 1.15;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+
+/*
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+*/
+
+body {
+	min-width: 100%;
+	margin: 0;
+/*	background: #ffffff;*/
+	@include mq() {
+	font-size: 1.6rem;
+	}
+	@include mq(smmax) {
+	font-size: 1.3rem;
+	}
+/*	line-height: 1.5; */
+	color: $text-color;
+/*	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+main {
+	width: 100%;
+	overflow:hidden;
+}
+
+a {
+	color:$text-color;
+	transition: .25s;
+	&:hover {
+		opacity: .6;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-style: none;
+	vertical-align: middle;
+}
+svg {
+	width: 100%;
+	height: auto;
+	border-style: none;
+	vertical-align: middle;
+}
+img[src$=".svg"],
+img[src$=".svgz"] {
+	width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+input[type="submit"],
+input[type="button"] {
+border-radius: 0;
+-webkit-box-sizing: content-box;
+-webkit-appearance: button;
+appearance: button;
+border: none;
+box-sizing: border-box;
+cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+outline-offset: -2px;
+}
+
+
+button,
+select {
+	text-transform: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+address {
+	font-style: normal;
+}
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+figure {
+  margin: 0;
+}

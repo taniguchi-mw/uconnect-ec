@@ -1,0 +1,103 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div id="one_column_flow" class="clearfix">
+  <section class="flow_con">
+    <h3 class="int"><img src="../image/common_oc/flow_int.png" alt="インターネットご注文"></h3>
+    <div class="flowbox01">
+      <h4>【受付】24時間ご注文可能</h4>
+      <div class="pb-5 ta-c"><img src="../image/common_oc/flow_int_img02.png" alt="10%ポイント還元"></div>
+      <p>インターネットの場合、<em>ご注文時の会員登録(無料)</em>で、定期便を除く通常商品ご注文時に、商品代金(税抜き)の<em>10％ポイント還元！</em><br>1ポイント=1円で、次回ご注文時にご利用いただけます。</p>
+    </div>
+    <div class="arrow"></div>
+    <div class="flowbox02">
+      <h4>お支払い方法</h4>
+      <p class="fc-lor fw-b">代金引換またはクレジットカード決済がお選びいただけます。</p>
+      <p><span class="fw-b">代金引換</span><br>
+        商品到着時に、担当のドライバーへお支払いください。</p>
+      <p><span class="fs-12">※到着時にクレジットカードでもお支払い可能な代金引換サービス(e-コレクト)をご希望の方は、ご注文時、備考欄に「佐川急便での配達希望」の旨をご記入ください。</span></p>
+      <p><span class="fw-b">クレジットカード</span>下記マークのあるカードがご利用いただけます。</p>
+      <p class="ta-c"><img src="../image/common_oc/flow_credit.png" width="244" height="45" alt="ご利用可能なクレジットカード"></p>
+    </div>
+    <div class="arrow"></div>
+    <div class="flowbox03">
+      <h4>メールが届きます</h4>
+      <p>ご注文後、ご注文時にご入力頂い
+        たメールアドレスへ、ご注文内容の確認メールが自動配信されます。</p>
+      <p><span>到着までに、自動配信、当店注文確認時、発送準備完了時の計３通メールが送られます。</span></p>
+      <p><span> <a href="//u-connect.jp/guide/guide_qa/index.html#l1" target="_blank">メールが届かずお困りの方へ</a></span></p>
+    </div>
+    <div class="arrow"></div>
+    <div class="flowbox04">
+      <h4>発送手続き・商品の到着</h4>
+      <p class="fc-lor fw-b">営業日12時までのご注文で最短当日に出荷し、通常１～３日程度で到着いたします。</p>
+      <p>運送会社は基本的に佐川急便、沖縄・離島・中継料金のかかる一部地域は日本郵便を利用してお送りいたします。<br>
+        お試し用商品等でクレジットカード決済の場合は、日本郵便(ゆうパケット)でお送りさせていただきます。</p>
+      <p><span>※恐れ入りますが天候や交通混雑状況により、若干到着が遅れる場合がございます。<br>
+        ※天候や物流増加などの配送状況により、運送会社を変更してお送りさせていただく場合がございます。</span></p>
+    </div>
+    <!-- //section --> 
+  </section>
+  <section class="flow_con">
+    <h3><img src="../image/common_oc/flow_tel.png" alt="電話ご注文"></h3>
+    <div class="flowbox01">
+      <h4>【受付】平日9時半～18時半</h4>
+      <p class="pb-0">ご注文専用フリーダイヤル</p>
+      <p class="icon"><img src="../image/common_oc/icon_free.png" alt="フリーダイヤル">0120-799-100</p>
+      <p>「ご注文の商品名」と「個数」をお伝えください。</p>
+      <p><span>※電話・FAXでのご注文の場合は、ポイント取得や利用が出来ません。</span></p>
+    </div>
+    <div class="arrow"></div>
+    <div class="flowbox02">
+      <h4>お支払い方法</h4>
+      <p class="fc-lor fw-b">代金引換またはクレジットカード決済がお選びいただけます。</p>
+      <p><span class="fw-b">代金引換</span><br>
+        商品到着時に、担当のドライバーへお支払いください。</p>
+      <p><span class="fs-12">※到着時にクレジットカードでもお支払い可能な代金引換サービス(e-コレクト)をご希望の方は、ご注文時、備考欄に「佐川急便での配達希望」の旨をご記入ください。</span></p>
+      <p><span class="fw-b">クレジットカード</span>下記マークのあるカードがご利用いただけます。</p>
+      <p class="ta-c"><img src="../image/common_oc/flow_credit.png" width="244" height="45" alt="ご利用可能なクレジットカード"></p>
+
+    </div>
+    <div class="arrow"></div>
+    <div class="dot sp_disp_none"></div>
+    <div class="arrow sp_disp_none"></div>
+    <div class="flowbox04">
+      <h4>発送手続き・商品の到着</h4>
+      <p class="fc-lor fw-b">営業日12時までのご注文で最短当日に出荷し、通常１～３日程度で到着いたします。</p>
+      <p>運送会社は基本的に佐川急便、沖縄・離島・中継料金のかかる一部地域は日本郵便を利用してお送りいたします。<br>
+        お試し用商品等でクレジットカード決済の場合は、日本郵便(ゆうパケット)でお送りさせていただきます。</p>
+      <p><span>※恐れ入りますが天候や交通混雑状況により、若干到着が遅れる場合がございます。<br>
+        ※天候や物流増加などの配送状況により、運送会社を変更してお送りさせていただく場合がございます。</span></p>
+    </div>
+    <!-- //section --> 
+  </section>
+  <section class="flow_con" id="order_fax">
+    <h3><img src="../image/common_oc/flow_fax.png" alt="FAXご注文"></h3>
+    <div class="flowbox01">
+      <h4>【受付】24時間ご注文可能</h4>
+      <p class="pb-0">FAXご注文専用ダイヤル</p>
+      <p class="icon"><img src="../image/common_oc/icon_fax.png" alt="FAXご注文専用ダイヤル">092-401-0245</p>
+      <p class="fw-b"><a href="//u-connect.jp/guide/flow/index.html#order_fax" target="_blank"><img src="../image/common_oc/icon_pdf.png" alt="PDFダウンロード">ご注文用紙ダウンロード</a></p>
+      <p>上記よりダウンロードして印刷、ご記入いただいたのち、FAXでお送りください。</p>
+      <p><span>※電話・FAXでのご注文の場合は、ポイント取得や利用が出来ません。</span></p>
+    </div>
+    <div class="arrow"></div>
+    <div class="flowbox02">
+      <h4>お支払い方法</h4>
+      <p class="fc-lor fw-b">代金引換でお送り致します。</p>
+      <p><span class="fw-b">代金引換</span><br>
+        商品到着時に、担当のドライバーへお支払いください。</p>
+      <p><span class="fs-12">※到着時にクレジットカードでもお支払い可能な代金引換サービス(e-コレクト)をご希望の方は、ご注文時、備考欄に「佐川急便での配達希望」の旨をご記入ください。</span></p>
+    </div>
+    <div class="arrow"></div>
+    <div class="dot sp_disp_none"></div>
+    <div class="arrow sp_disp_none"></div>
+    <div class="flowbox04">
+      <h4>発送手続き・商品の到着</h4>
+      <p class="fc-lor fw-b">営業日12時までのご注文で最短当日に出荷し、通常１～３日程度で到着いたします。</p>
+      <p>運送会社は基本的に佐川急便、沖縄・離島・中継料金のかかる一部地域は日本郵便を利用してお送りいたします。<br>
+        お試し用商品等でクレジットカード決済の場合は、日本郵便(ゆうパケット)でお送りさせていただきます。</p>
+      <p><span>※恐れ入りますが天候や交通混雑状況により、若干到着が遅れる場合がございます。<br>
+        ※天候や物流増加などの配送状況により、運送会社を変更してお送りさせていただく場合がございます。</span></p>
+    </div>
+    <!-- //section --> 
+  </section>
+</div>

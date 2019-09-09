@@ -1,0 +1,699 @@
+/*
+<!--user stylesheets-->
+
+<style type="text/css">
+<!--　★★★★★★★★★★★★★★★★★★
+
+PCデザインはインラインCSSのため、
+当CSSはたまごPCデザインの
+「スタイルシート」へ反映すること
+
+★★★★★★★★★★★★★★★★★★★★★　-->
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓　たまご設定範囲　↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+*/
+
+
+
+/**wrapper**/
+#head_wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+/*------------   end head style   ------------*/
+
+.success-message {
+	position:relative;
+	margin: 10px auto;
+}
+.success-message h1 {
+	color: #0088CC !important;
+	font-size: 115% !important;
+	font-weight: bold !important;
+	margin:0;
+	padding:0;
+	position:relative;
+	height:auto;
+	line-height:1.2em;
+	background:none;
+	text-align: center;
+	width: 100% !important;
+}
+
+/*------------   start foot style   ------------*/
+
+/**wrapper & copyright**/
+#foot_wrapper {
+	width: 800px;
+	margin: 0 auto 40px auto;
+}
+
+#foot {
+	margin: 20px 0;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+#foot p.copy {
+	font-weight: bold;
+	float: left;
+	font-size: 11px;
+}
+
+#foot p.powerd { float: right; }
+
+
+
+/**information area**/
+
+#usr_footer { background: #CCC; }
+
+#usr_footer a {
+	color: #0000ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#usr_footer a:hover { color: #F60; }
+
+#usr_footer a img { border-bottom: none; }
+
+#usr_footer table td {
+	background-color: #FFF;
+	vertical-align: top;
+}
+
+#usr_footer table p { margin: 10px; }
+
+#usr_footer strong {
+	font-weight: bold;
+	color: #C70000;
+	line-height: 20px;
+}
+
+#usr_footer .right { text-align: right; }
+
+/**wrapper**/
+#head_wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*------------   end head style   ------------*/
+
+
+
+/*------------   start foot style   ------------*/
+
+/**wrapper & copyright**/
+#foot_wrapper {
+	width: 800px;
+	margin: 0 auto 40px auto;
+}
+
+#foot {
+	margin: 20px 0;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+#foot p.copy {
+	font-weight: bold;
+	float: left;
+	font-size: 11px;
+}
+
+#foot p.powerd { float: right; }
+
+
+
+/**information area**/
+
+#usr_footer { background: #CCC; }
+
+#usr_footer a {
+	color: #0000ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#usr_footer a:hover { color: #F60; }
+
+#usr_footer a img { border-bottom: none; }
+
+#usr_footer table td {
+	background-color: #FFF;
+	vertical-align: top;
+}
+
+#usr_footer table p { margin: 10px; }
+
+#usr_footer strong {
+	font-weight: bold;
+	color: #C70000;
+	line-height: 20px;
+}
+
+#usr_footer .right { text-align: right; }
+
+
+/*------------------------   ★カスタマイズ★   ------------------------*/
+
+/* header */
+body {
+	background-color:#F8F4E6;
+}
+a {
+	opacity: 1.0;
+}
+a:hover {
+	transition: opacity 0.1s linear;
+	-moz-transition: opacity 0.1s linear;
+	-webkit-transition: opacity 0.1s linear;
+	-o-transition: opacity 0.1s linear;
+	-ms-transition: opacity 0.1s linear;
+	opacity: 0.8;
+}
+#wrapper {
+	width: 980px;
+	margin:0 auto;
+	border:none;
+}
+#head {
+	width: 980px;
+	height: 160px;
+	background: url(//u-connect.jp/cart_only/images/h_bg.png) left 0 no-repeat;
+	position:relative;
+}
+#head h1 {
+	width: 940px;
+	height: 50px;
+	line-height: 48px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	background: url(//u-connect.jp/cart_only/images/tt_bg.png) left top no-repeat;		
+	color:#5F4746;
+	margin:0;
+	padding:0 0 0 40px;
+	font-size: 140%;
+	font-weight: bold;
+	text-align:left;
+}
+#logo {
+    width: 169px;
+    height: 39px;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+}
+.shoppingGroup {
+    width: 274px;
+    height: 57px;
+    position: absolute;
+    left: 183px;
+    top:26px;
+}
+#head_navi {
+	width: 110px;
+	height: 65px;
+	position:absolute;
+	left: 300px;
+	top: 23px;
+}
+#head_navi ul {
+	padding: 0;
+	margin: 0;	
+	width: 110px;
+	height: 65px;	
+	background-image: url(//u-connect.jp/cart_only/images/h_navi.png);	
+}
+#head_navi ul li {
+	width: 110px;
+	list-style:none;
+}
+#head_navi ul li.nv1 {
+	height:40px;
+	margin-bottom: 5px;
+}
+#head_navi ul li.nv1 a {
+	padding-top:5px;
+	height:35px;
+	line-height: 1.2em;	
+}
+#head_navi ul li.nv2, #head_navi ul li.nv2 a {
+	height:20px;
+	line-height: 20px;	
+}
+#head_navi ul li a {
+	display: block;
+	font-size: 87%;
+	width: 90px;
+	padding-left: 20px;
+	color: #5F4646;
+	font-size: 12px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+#h_fax a {
+	display:block;
+	width:81px;
+	height:26px;
+	position:absolute;
+	right:-6px;
+	top: 19px;
+}
+#head + p {
+	padding:10px 0;
+}
+/* body_wrapper */
+#body_wrapper {
+	margin:0 auto 15px;	
+	width: 980px;
+	background-color:#FFF;
+-moz-box-shadow:0px 2px 2px rgba(0,0,0,0.15);
+-webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.15);
+box-shadow:0px 2px 2px rgba(0,0,0,0.15);		
+}
+#cart_body {
+	margin:0 auto;	
+}
+#cart {
+	margin-bottom: 0px !important;
+}
+.cart-message {
+	margin: auto;
+}
+#pageback {
+	padding-left: 90px;
+}
+#product_body {
+	margin:0 auto;
+}
+#body_title {
+	width: 800px;
+	margin:0 auto;
+}
+/*-- f_guide --*/
+#pageback_shop {
+	width: 100%;
+	padding: 15px 0;
+}
+#pageback_shop li {
+	display: inline-block;
+	width: 20%;
+	height:auto;
+	padding-right: 30px;
+	list-style: none;
+}
+#pageback_shop li a {
+	display:block;
+	width: 100%;
+	height:auto;
+	padding:4px;
+	background:#FFF;
+	text-align:center;
+-moz-box-shadow:0px 2px 2px rgba(0,0,0,0.15);
+-webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.15);
+box-shadow:0px 2px 2px rgba(0,0,0,0.15);	
+}
+#pageback_shop li a img {
+	width:100%;
+	height:auto;
+}
+#f_guide {
+	width:980px;
+	margin:0 auto;
+	text-align: left;
+	font-size: 120%;
+}
+#f_guide div.fl_l {
+	width: 465px;
+	padding-right: 50px;
+	float: left;
+}
+#f_guide div.fl_r {
+	width: 465px;
+	float: left;
+}
+#f_guide h3 {
+	font-size: 147%;
+	padding: 30px 0;
+	background: none;
+	margin:0;
+	width: 465px;
+}
+#f_guide h4 {
+	font-size: 120%;
+	padding-bottom: 15px;
+	color: #F08200;
+	background: none;
+	margin:0;
+}
+#f_guide p {
+	padding-bottom: 15px;
+}
+#fax_order {
+	text-align: left;
+	width: 950px;
+	height:114px;
+	background: url(//u-connect.jp/cart_only/images/fax_bg.png) left top no-repeat;
+	margin:0 auto 15px;
+	padding:15px;
+	color:#2C1F19;
+}
+#fax_order div {
+	padding:0 8px 0 0;
+	float:left;	
+	width:240px;
+	height:114px;
+}
+#fax_order .last {
+	width:206px;
+	padding:0;
+}
+#fax_order div h5 {
+	padding:0 0 8px 0;
+	margin:0;
+}
+#fax_order div p {
+	padding:0;
+	margin:0;
+	line-height: 1.4em;
+}
+#fax_order .fax_order_pdf p {
+	line-height: 1em;
+}
+#fax_order div p img {
+	vertical-align: text-bottom;
+}
+#fax_order div p > img {
+	padding-bottom:5px;
+}
+.link_s a {
+	background: url(//u-connect.jp/image/common/link_s.png) 0 50% no-repeat;
+	padding-left: 8px;
+	color:#39A3B1;
+	font-size:13px;
+	font-weight:bold;
+}
+.link_s a:hover {
+	background: url(//u-connect.jp/image/common/link_s.png) 2px 50% no-repeat;
+	color:#39A3B1;
+}
+.link_s span {
+	font-size:10px;
+}
+
+#f_navi {
+	width: 980px;
+	border-top: 1px solid #FFF;
+	background: url(//u-connect.jp/image/common/f_bg.png) left top repeat;
+	padding: 15px 0 10px;
+	text-align: center;
+}
+#f_navi ul {
+	text-align: center;
+	padding-bottom: 10px;
+}
+#f_navi ul li {
+	display:inline-block;
+	padding-right: 10px;
+	text-decoration: none;
+}
+#f_navi ul li a {
+	color:#FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+#copyright {
+	color:#FFF;
+	font-size: 12px;
+	text-align: center;
+	padding:0;
+	margin:0;
+}
+#goto_sp {
+	width: 94%;
+	margin:5px auto 15px;
+}
+#goto_sp a {
+	display:block;
+	padding:10px 10px 10px 25px;
+	font-size: 400%;
+	line-height:200%;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background: -moz-linear-gradient(
+		top,
+		#F0A700 0%,
+		#F08200);		
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#F0A700),
+		to(#F08200));
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #F09500;
+	-moz-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	-webkit-box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	box-shadow:
+		1px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 5px rgba(255,255,255,0.3);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.oshirase {
+	margin: 0 auto 5px;
+	padding: 10px;
+	background: #FFF;
+	border: 1px solid #EEE;
+}
+.oshirase p {
+	text-align:left;
+}
+.oshirase p em {
+	text-align:left;
+	color:red;
+	font-weight: bold;
+}
+
+.oshirase_txt {
+	position:relative;
+	width:100%;
+	padding: 8px;
+	background-color: #E1F7FB;
+	border:1px solid #9CB7E9;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2D66D1;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.oshirase_txt:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #2D66D1;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+.oshirase_txtS {
+	width:100%;
+	padding: 10px;
+	background-color: #E1F7FB;
+	border:1px solid #9CB7E9;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2D66D1;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-table;
+}
+.clear {
+	clear: both;
+}
+
+/*======================================
+  cal.css
+  ======================================*/
+
+div.cal_wrapper {
+	padding: 0px 0px 10px;
+	font-weight: bold;
+}
+div.schedule_wrapper {
+	padding: 10px 0px;
+	width: 310px;
+	border: solid 1px #CCC;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #666;
+}
+div.schedule_wrapper h3 {
+	padding: 0px 10px;
+	font-weight: normal;
+	margin: 0px;
+	color: #666;
+}
+div.schedule_wrapper div.schedule_list {
+	padding: 0px 10px;
+	margin: 0px;
+}
+div.schedule_wrapper div.schedule_list ol {
+	padding: 0px;
+	margin: 5px auto;
+	border-top: solid 1px #CCC;
+}
+div.schedule_wrapper div.schedule_list ol li {
+	padding: 5px 10px 0px 0px;
+	margin: 0px 0px 0px 30px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+div.schedule_wrapper div.schedule_list ol li:hover {
+	text-decoration: underline;
+}
+div.cal_wrapper table.cal tr th p {
+	float: left;
+	padding: 5px !important;
+	margin: 0px;
+	color: #5F4646;
+	/*font-size: 12px;*/
+}
+div.cal_wrapper table.cal tr th div.cal_ui {
+	float: right;
+	display:none;/* prev/next */
+}
+div.cal_wrapper table.cal tr th div.cal_ui input {
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	font-size: 12px;
+	margin: 7px 1px 0;
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td {
+	/* border-top: solid 1px #FFF; */
+}
+div.cal_wrapper table.cal tr td {
+	font-size: 12px;
+	text-align: center;
+	padding: 2px
+}
+div.cal_wrapper table.cal tr.headline td {
+	padding: 4px 6px;
+	color: #5F4646;
+	font-size: 12px;
+}
+div.cal_wrapper table.cal tr.headline {
+	background-color: #F8F4E6;
+}
+div.cal_wrapper table.cal tr td div {
+	position: relative;
+	padding: 4px 6px;
+	/*font-size: 10px;*/
+	text-align: center;
+	background-color: #FFF;
+	border-radius: 3px;
+	color: #5F4646;
+}
+div.cal_wrapper table.cal tr td div span {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	display: none;
+	width: 180px;
+	border: solid 1px #EEE;
+	background-color: #FFF;
+	text-align: left;
+	padding: 5px;
+	z-index: 10;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 3px #666;
+}
+
+
+div.cal_wrapper table.cal tr td div.Sat {
+	color: #396CB8;
+}
+div.cal_wrapper table.cal tr td div.Sun {
+	color: #F3122D;
+}
+div.cal_wrapper table.cal tr td div.Today {
+	font-weight: bolder;
+	border: 1px solid #B2A266;
+}
+div.cal_wrapper table.cal tr td div.Deli {
+	background-color: #EFE;
+}
+div.cal_wrapper table.cal tr td div.Holyday {
+	font-weight: bolder;
+	color: #F3122D;
+	background-color: #FFE5E5;
+}
+div.cal_wrapper table.cal tr td div.Birthday {
+	font-weight: bolder;
+	background-color: #EEF;
+	color: #090;
+	border-radius: 3px;
+}
+
+div.cal_wrapper table.cal tr td div.backward {
+	color: #CCC;
+	font-weight: normal;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td div.pointer {
+	cursor: pointer;
+}
+div.cal_wrapper table.cal tr td div.pointer:hover {
+	background-color: #EEE;
+}
+
+#cal0, #cal1 {
+	width: 230px;
+	float: left;
+}
+#cal0{
+	padding-right: 5px;
+}
+
+
+
+/*
+</style>
+
+<!--user stylesheets-->
+<!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑　たまご設定範囲　↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --> 
+*/

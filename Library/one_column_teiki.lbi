@@ -1,0 +1,37 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<section id="teiki_details">
+  <h2 class="teiki_details_tit">便利でお得な定期便<br>ご利用ガイド</h2>
+  <p class="teiki_details_txt">続けて実感したいあなたへ、<br class="teiki_details_br">特別コースでお届けいたします。</p>
+  <div class="teiki_details">
+    <div class="teiki_detailsBox">
+      <div class="teiki_detailsBox_ttBox">
+        <h4 class="teiki_detailsBox_ttBox_tt">お届け周期・お届け日時<br><span class="teiki_detailsBox_ttBox_txt">をお選びいただけます</span></h4>
+        <p class="teiki_detailsBox_ttBox_sub">最短当日出荷でいつでも開始できます。曜日のご指定も可能です。</p>
+      </div>
+      <div class="teiki_detailsBox_img"><img src="../image/common_oc/teiki_sec01_02.png" alt="お届け周期" /></div>
+      <div class="teiki_detailsBox_img"><img src="../image/common_oc/teiki_sec01_03.png" alt="お届け時間帯" /></div>
+      <p class="teiki_detailsBox_txt">初回お届け日は、1ヶ月先までご指定いただけます。<br>
+        ご指定のない場合、平日12時までのご注文完了で最短当日に出荷し、ご地域によって早ければ翌日、遅くとも2日～3日後には到着いたします。 <br>
+      </p>
+    </div>
+    <div class="teiki_detailsBox">
+      <div class="teiki_detailsBox_ttBox">
+        <h4 class="teiki_detailsBox_ttBox_tt">途中変更可<br><span class="teiki_detailsBox_ttBox_txt">ご都合に合わせて、随時ご変更いただけます。</span></h4>
+        <p class="teiki_detailsBox_ttBox_sub">お届け日時や個数、お届け周期など、継続途中でもご調整いただけます。</p>
+      </div>
+      <p class="teiki_detailsBox_txt">変更をご希望の際は、当店出荷予定日(毎回明細書の右上に記載)の５営業日前までにご連絡ください。<br>
+      インターネットご注文時にマイアカウントページを作成いただくと、お客様ご自身でもご変更いただけるようになります。</p>
+      <div class="teiki_detailsBox_img"><img src="../image/common_oc/teiki_sec02_02.png" alt="お客様ご自身での変更も可" /></div>
+      <p class="teiki_detailsBox_txt teiki_detailsBox_txt-caution">【ご変更に関する諸注意】<br>
+        ※定期便継続中の方へのキャンペーン期間中にお休み等で定期お届けのない場合は、キャンペーン商品のお届けはできませんのでご注意ください。</p>
+    </div>
+    <div class="teiki_detailsBox">
+      <div class="teiki_detailsBox_ttBox">
+        <h4 class="teiki_detailsBox_ttBox_tt">お支払い方法<br><span class="teiki_detailsBox_ttBox_txt">代金引換またはクレジットカード自動決済</span></h4>
+        <p class="teiki_detailsBox_ttBox_sub">到着時のご用意が不要な、クレジットカード自動決済がおすすめです。</p>
+      </div>
+      <p class="teiki_detailsBox_txt">お支払い方法は、代金引換またはクレジットカード自動決済からお選びいただけます。<br>お支払い方法も継続途中でご変更いただけます。</p>
+      <div class="teiki_detailsBox_img"><img src="../image/common_oc/teiki_sec03_02.png" alt="お支払い方法" /></div>
+    </div>
+  </div>
+</section>

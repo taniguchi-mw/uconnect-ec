@@ -1,0 +1,489 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/*======================================
+  ビフィズス菌・乳酸菌
+========================================*/
+/*---------- common rule ----------*/
+
+p::selection, span::selection, em::selection {
+background: #fff900;
+}
+p::-moz-selection, span::-moz-selection, em::-moz-selection {
+background: #fff900;
+}
+em {
+	background:linear-gradient(transparent 60%, #fff900 60%);
+	font-style: normal;
+}
+em::selection {
+	color: #009fe9;
+}
+em::-moz-selection {
+	color: #009fe9;
+}
+img {vertical-align: bottom;}
+
+
+
+.topimg_head {
+	position: relative;
+	width:100%;
+}
+.topimg_campaign {
+	position: absolute;
+	width:23%;
+	max-width:219px;
+	left:-4%;
+	bottom:17%;
+}
+
+
+/*-------- movie --------*/
+.movieBox {
+	position:relative;
+	margin:0 auto 15px;
+	width:740px;
+	height:218px;
+}
+.movieBox__bfl {
+	background:url(../../image/movie/bn_movie_bfl.png) center top no-repeat;
+}
+.movieBox_btn {
+	position:absolute;
+	top:30px;
+	right:32px;
+	width:237px;
+	height:148px;
+}
+.movieBox_btn a {
+	display:block;
+	width:100%;
+}
+@media screen and (max-width:740px) {
+.movieBox {
+	margin:10px auto 0;
+	position:relative;
+	width:220px;
+	height:248px;
+}
+.movieBox__bfl {
+	background:url(../../image/movie/bn_movie_bfl_s.png) center top no-repeat;
+}
+.movieBox_btn {
+	position:relative;
+	top:91px;
+	left:17px;
+	width:186px;
+	height:115px;
+}
+.movieBox_btn a img {
+	width:100%;
+}
+}
+
+/*--- yajirushi ---*/
+.yajirushi_ylw, .yajirushi_ble {
+	margin: 15px auto 30px;
+	width: 100%;
+	height: auto;
+	min-height: 76px;
+}
+@media screen and (max-width:640px) {
+	.yajirushi_ylw, .yajirushi_ble {
+	min-height: 56px;
+	}
+}
+.yajirushi_ylw {
+	background: url(../../image/bifilact/yajirushi_ylw.png) center top no-repeat;
+	background-size: contain;
+}
+.yajirushi_ble {
+	background: url(../../image/bifilact/yajirushi_ble.png) center top no-repeat;
+	background-size: contain;
+}
+
+/*---------- title ----------*/
+.title_h2__bf, .title_h3__bf, .title_h4__bf {
+	clear: both;
+	margin:0 auto;
+	padding:30px 0 50px;
+	text-align: center;
+}
+
+/*--- box ---*/
+.bifilact .container01 {
+	padding: 20px 10px 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*---------- contents ----------*/
+.bifilact {
+	background:#FFF;
+}
+.bifilact .topimg_head {
+	margin:0;
+	padding:0;
+	line-height:0;
+}
+.bifilact .topimg_head img {
+	width:100%;
+}
+.bifilact .topimg img {
+	width:100%;
+}
+/*--- txtarea_box01 ---*/
+.bifilact .txtarea_box01 {
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	width: 100%;
+	max-width: 780px;
+}
+.bifilact .txtarea_box01 figure {
+	float: left;
+	margin: 0 auto;
+	width: 380px;
+	text-align: center;
+}
+.bifilact .txtarea_box01 figure img {
+	margin: 0 auto 1.4em;
+	max-width: 380px;
+}
+.bifilact .txtarea_box01 .txtarea {
+	float: left;
+	margin: 0 auto;
+	padding-left: 50px;
+	width: 350px;
+	line-height: 2em;
+}
+.bifilact .txtarea_box01 .txtarea p {
+	margin: 0 0 1.4em;
+}
+@media screen and (max-width:640px) {
+	.bifilact .txtarea_box01 figure,
+	.bifilact .txtarea_box01 .txtarea {
+		float: none;
+		width:auto;
+	}
+	.bifilact .txtarea_box01 .txtarea {
+		padding: 0;
+	}
+	.bifilact .txtarea_box01 figure img {
+/* 		max-width:300px; */
+	}
+}
+/*--- voice_box01 ---*/
+.bifilact .voice_box01 {
+	margin: 0 auto ;
+	padding-bottom: 15px;
+	width: 100%;
+	max-width: 742px;
+}
+.bifilact .voice_box01 li {
+	overflow:hidden;
+	width:100%;
+	text-indent:100%;
+	white-space:nowrap;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.bifilact .voice_box01 li.voice_box01__01 {
+	padding-bottom: 5px;
+	height: 250px;
+	background-image: url(../../image/bifilact/img04_01.png);
+}
+.bifilact .voice_box01 li.voice_box01__02 {
+	padding-bottom: 40px;
+	height: 265px;
+	background-image: url(../../image/bifilact/img04_02.png);
+}
+.bifilact .voice_box01 li.voice_box01__03 {
+	padding-bottom: 30px;
+	height: 269px;
+	background-image: url(../../image/bifilact/img04_03.png);
+}
+@media screen and (max-width:640px) {
+	.bifilact .voice_box01 li.voice_box01__01 {
+		padding-bottom: 12px;
+		height: 120px;
+	}
+	.bifilact .voice_box01 li.voice_box01__02 {
+		padding-bottom: 38px;
+		height: 127px;
+	}
+	.bifilact .voice_box01 li.voice_box01__03 {
+		padding-bottom: 23px;
+		height: 129px;
+	}
+}
+.bifilact .bn_daibiki {
+	margin:0 auto;
+	padding:10px;
+	width: 96%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFFF9A;
+	font-size:14px;
+	color:#5B4D4D;
+	text-shadow:3px 3px 1px #FFF;
+}
+.bifilact .bn_daibiki img {
+	padding-right:5px;
+	width:30px;
+	height:19px;
+}
+.bifilact .bn_daibiki span {
+	font-weight:bold;
+	color:#E90606;
+}
+
+
+/*---------- order ----------*/
+.bifilact .order_box {
+	padding-top: 25%;
+	width: 100%;
+	max-width: 960px;
+	background: url(../../image/bifilact/order_bg.jpg) left top no-repeat;
+	background-size: contain;
+}
+.bifilact .order_box .btn_order {
+	padding-bottom: 15px;
+}
+
+.bifilact .btn_order {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 20px 10px;
+	width:100%;
+	height:auto;
+	max-width: 952px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bifilact .btn_orderList {
+	margin: 0 auto;
+	width:100%;
+	max-width: 952px;
+}
+.bifilact .btn_orderList li {
+	position: relative;
+	float: left;
+	padding-top: 13px;
+ 	width: 306px;
+	height: 229px; 
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.bifilact .btn_orderList .btn_order__02 {
+	margin: 0 5px 0 0;
+	padding-top: 0;
+	 width: 315px;
+	height: 242px; 
+}
+.bifilact .btn_orderList .btn_order__05 {
+	margin: 0 7px;
+}
+.bifilact .btn_orderList li a {
+	display: block;
+	margin:52% auto 0;
+	padding:0 0 0 15px;
+	width: 266px;
+	text-align: center;
+}
+.bifilact .btn_orderList .btn_order__02 a {
+	padding:7px 0 0 23px;
+}
+.bifilact .btn_orderList .btn_order__01 {
+	background-image: url(../../image/bifilact/order_01_bg.png);
+}
+.bifilact .btn_orderList .btn_order__02 {
+	background-image: url(../../image/bifilact/order_teiki_bg.png);
+}
+.bifilact .btn_orderList .btn_order__03 {
+	background-image: url(../../image/bifilact/order_02_bg.png);
+}
+.bifilact .btn_orderList .btn_order__04 {
+	background-image: url(../../image/bifilact/order_03_bg.png);
+}
+.bifilact .btn_orderList .btn_order__05 {
+	background-image: url(../../image/bifilact/order_04_bg.png);
+}
+.bifilact .btn_orderList .btn_order__06 {
+	background-image: url(../../image/bifilact/order_05_bg.png);
+}
+.bifilact .btn_order .order_info {
+	clear:both;
+	margin:0 auto;
+	padding:10px 0 20px;
+	width: 100%;
+	max-width:848px;
+	text-align: center;
+}
+@media screen and (max-width:640px) {
+	.bifilact .btn_order {
+		margin: 0;
+	}
+	.bifilact .btn_orderList li {
+		float: none;
+		margin: 0 auto;
+		width: 293px;
+		height: 219px;
+	}
+	.bifilact .btn_orderList li:nth-child(2) {
+		margin: 0 auto;
+		padding-top: 13px;
+		width: 301px;
+		height: 231px;
+	}
+	.bifilact .btn_orderList li:nth-child(5) {
+		margin: 0 auto;
+	}
+	.bifilact .btn_orderList li a {
+		margin:52% auto 0;
+		padding:0 0 0 15px;
+		width: 239px;
+	}
+}
+
+/*---------- order_teiki ----------*/
+.order_teiki {
+	margin:1em auto 0;
+	padding:0;
+	width:94%;
+	max-width:900px;
+}
+.order_teiki_title {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align:center;
+	padding:0 0 2%;
+}
+.order_teiki_sp .order_teiki_title { padding:3% 0 0;}
+.order_teiki_title img {
+	width:100%;
+}
+.order_teiki_title01 {flex-basis:45%;}
+.order_teiki_title01 img {max-width:380px;}
+.order_teiki_title02 {flex-basis:55%;}
+.order_teiki_title02 img {max-width:460px;}
+.order_teiki_box {
+	border:5px solid #009fe9;
+	border-radius: 15px;
+	background:url(../../image/bifilact/teiki_item_bg.png) left bottom repeat-x #FFFFFF;
+	margin:0 auto;
+	padding:3% 2% 2%;
+	width: 94%;
+	max-width:900px;
+}
+.order_teiki_merit_List {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.order_teiki_merit {
+	flex: 0 0 275px;
+	max-width:275px;
+	padding:3px;	
+}
+.order_teiki_merit img {width:100%;}
+.order_teiki_sp .order_teiki_merit_List { margin:2% auto 1%;}
+.order_teiki_sp .order_teiki_merit {flex: 0 0 240px;}
+.order_teiki_itembox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin:1% auto 0;
+} 
+.order_teiki_pricebox {	
+	display: flex;
+	align-items: center;
+	padding:1%;
+}
+.order_teiki_off { padding:10px; max-width:114px; }
+.order_teiki_arrow { margin:0 auto; max-width:371px;width: 84%;}
+.order_teiki_sp {
+	border-radius: 15px 15px 0 0; 
+	background-color: #d82824;
+	margin:2% auto 0;
+	padding:3% 2%;
+	width: 94%;
+	max-width:850px;
+	position:relative;
+	z-index:0;
+}
+.order_teiki_sp_titlebox {
+	display: flex;
+	justify-content: center;
+	margin:-6% auto -2%;
+	width:100%;
+}
+.order_teiki_sp_title01 {
+	margin: 0 -4% 0 0;
+}
+.order_teiki_sp_detailsbox {
+	background-color:#FFFFFF;
+	border-radius:12px;
+	padding: 1% 2% 3%;
+}
+.order_teiki_btn { text-align: center;}
+.order_teiki_sp_txtbox {margin: 2% auto; width: 90%;}
+.order_teiki_sp_txt {}
+.order_teiki_sp_txt_em { font-size: 1.5rem; }
+.order_teiki_sp_txt_em-fcr { color:#d82824; }
+.order_teiki_sp_txt_em-bcy { background:linear-gradient(transparent 60%, #fff900 60%) ;}
+.order_teiki_details { text-align: center; font-size: 1.2rem;}
+.order_teiki_set {
+	border-radius: 0 0 15px 15px; 
+	background-color: #fffbc5;
+	margin:0 auto 3%;
+	padding:2%;
+	width: 94%;
+	max-width:850px;
+}
+@media screen and (max-width:768px) {
+.topimg_campaign { left:-1%; }
+.order_teiki_title { display:block;}
+.order_teiki_title01 {flex-basis:100%;}
+.order_teiki_title02 {flex-basis:100%;}
+.order_teiki_sp {margin:6% auto 0;}
+.order_teiki_sp_title01 {margin: -6% -20% 0 0;}
+.order_teiki_btn img {width:100%;}
+}
+
+
+
+/*---------- common_one_column customize ----------*/
+#one_column_flow {
+	margin-top: 15px;
+	background: none;
+}
+#one_column_flow .flow_con .flowbox01 h4, .flow_clr {
+	color: #009fe9;
+}
+#one_column_flow .flow_con .flowbox01, #one_column_flow .flow_con .flowbox02, #one_column_flow .flow_con .flowbox03 {
+	border: 1px solid #CCC;
+}
+#one_column_flow .flow_con .flowbox02 {
+	margin-top: 0;
+}
+.flowbox04 {
+	margin-bottom: 50px;
+}
+.teiki_detailsBox {
+	border:3px solid #c6dee9;
+}
+.teiki_detailsBox_ttBox_tt, .teiki_detailsBox_ttBox_sub { color:#009fe9;}
+

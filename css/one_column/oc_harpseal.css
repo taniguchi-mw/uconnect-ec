@@ -1,0 +1,401 @@
+@charset "utf-8";
+/*======================================
+  ハープシールオイル
+========================================*/
+/*---------- common rule ----------*/
+p::selection, span::selection {
+background: #D2EAFF;
+}
+p::-moz-selection, span::-moz-selection {
+background: #D2EAFF;
+}
+em::selection, h3::selection, h4::selection {
+background: #EFFB0B;
+}
+em::-moz-selection, h3::-moz-selection, h4::-moz-selection {
+background: #FEFB8A;
+}
+
+/*---------- title ----------*/
+.harpseal .main_title__hs {
+    position: relative;
+	margin: 20px auto 30px;
+	padding:18px 10px;
+	width:100%;
+	background: #0058A8;
+	text-align: center;
+	color:#FFF;
+	font-weight:bold;
+	text-shadow: 3px 3px 3px #003464;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.harpseal .main_title__hs::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 15px solid transparent;
+    border-top: 15px solid #003464;
+}
+.harpseal .main_title__hs h2 {
+	position:relative;
+	padding:0 0 5px;
+	font-size:1.786em;
+}
+.harpseal .main_title__hs p {
+	font-size:1.125em;
+}
+.harpseal .sub_title__hs {
+	margin:0 auto 30px;
+	width: 100%;
+	text-align: center;
+}
+.harpseal .sub_title__hs img {
+	max-width: 933px;
+}
+
+
+/*---------- contents ----------*/
+.harpseal {
+	background:#FFF;
+}
+.harpseal .topimg {
+	margin-bottom:-19%;
+}
+.harpseal .topimg img {
+	width:100%;
+}
+
+/*---------- box ----------*/
+.harpseal .container01 figure, 
+.harpseal .container02 figure {
+	margin:0 auto 10px;
+	padding:0;
+	text-align: center;
+}
+.harpseal .container01 figure figcaption, 
+.harpseal .container02 figure figcaption {
+	margin:0 auto 15px;
+	padding:5px 8px;
+	width: 90%;
+	border-radius:1em;
+	-webkit-border-radius:2em;
+	-moz-border-radius:2em;
+	text-align: center;
+	font-weight: bold;
+	background-color:#D2EAFF;
+}
+.harpseal .container02 figure figcaption {
+	margin:0 auto 30px;
+}
+.harpseal .container02 figure figcaption img {
+	width: 100%;
+}
+.harpseal figure img.photo {
+	border:3px solid #FFF;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	box-shadow:1px 1px 4px #CCC;
+}
+.harpseal .container01 p, 
+.harpseal .container02 p, 
+.harpseal .container03 p {
+	padding-bottom: 15px;
+}
+.harpseal .container01 p em, 
+.harpseal .container02 p em, 
+.harpseal .container03 p em {
+	font-weight: bold;
+	color:#F18C19;
+}
+.container01 span, 
+.container02 span, 
+.container03 span {
+	font-size: 10px;
+}
+.harpseal .container01 p.note, 
+.harpseal .container02 p.note, 
+.harpseal .container03 p.note {
+	font-size: 14px;
+	color:#211F1F;
+}
+.container01 p.ref, 
+.container02 p.ref, 
+.container03 p.ref {
+	font-size: 10px;
+}
+.harpseal .container01 .box01 p, 
+.container01 .box03 p {
+	width:92%;
+	margin:0 auto;
+}
+
+/*--- .container01 ---*/
+.harpseal .container01 {
+	overflow: hidden;
+	margin:0 auto 30px;
+	padding: 0 10px;
+	width: 100%;
+	max-width:830px;
+	color:#654C4C;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.harpseal .container01 .box01 {
+	float: left;
+	width: 38%;
+}
+.harpseal .container01 .box02 {
+	float: left;
+	width: 59%;
+	padding-left: 3%;
+}
+.harpseal .container01 .box03 {
+	float: left;
+	width: 48%;
+}
+.harpseal .container01 .box04 {
+	float: left;
+	width: 49%;
+	padding-left: 3%;
+}
+@media screen and (max-width:640px) {
+	.harpseal .container01 .box01,
+	.harpseal .container01 .box02,
+	.harpseal .container01 .box03,
+	.harpseal .container01 .box04 {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.harpseal .container01 .box01 img,
+	.harpseal .container01 .box02 img,
+	.harpseal .container01 .box03 img,
+	.harpseal .container01 .box04 img {
+		max-width: 270px;
+	}
+}
+
+/*--- .container02 ---*/
+.harpseal .container02 {
+	margin:0 auto 30px;
+	padding: 0 10px;
+	width: 100%;
+	max-width:830px;
+	color:#654C4C;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.harpseal .container02 .box01 {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.harpseal .container02 .box02 {
+	width: 100%;
+	margin-bottom: 30px;
+}
+/*--- .container03 ---*/
+.harpseal .container03 {
+	margin:0 auto 60px;
+	padding: 0 10px;
+	width: 100%;
+	max-width:787px;
+	color:#654C4C;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.harpseal .container03 h3 {
+	margin:0 auto;
+	padding: 15px 0;
+	width: 100%;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.harpseal .container03 p,
+.harpseal .container03 div {
+	width: 100%;
+	max-width:730px;
+	margin:0 auto 15px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*---------- banner ----------*/
+
+.harpseal .order_box01 {
+	margin:0 auto;
+	padding-top: 61%;
+	width: 100%;
+	max-width: 926px;
+	background: url(../../image/harp_seal_oil/main_img02.png) top left no-repeat #FFF;
+	background-size: contain;
+
+}
+.harpseal .order_box02 {
+	margin:-50px auto 0;
+	padding-top: 56%;
+	width: 100%;
+	max-width: 926px;
+	background: url(../../image/harp_seal_oil/main_img03.png) top left no-repeat #FFF;
+	background-size: contain;
+}
+.harpseal .order_box03 {
+	margin:50px auto 0;
+	padding-top: 50%;
+	width: 100%;
+	max-width: 960px;
+	background: url(../../image/harp_seal_oil/main_img04.png) top center no-repeat #FFF;
+	background-size: contain;
+}
+.harpseal .bn_daibiki {
+	margin:0 auto;
+	padding:10px;
+	width: 96%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #C3EEEE;
+	font-size:14px;
+	color:#5B4D4D;
+	text-shadow:3px 3px 1px #FFF;
+}
+.harpseal .bn_daibiki img {
+	padding-right:5px;
+	width:30px;
+	height:19px;
+}
+.harpseal .bn_daibiki span {
+	font-weight:bold;
+	color:#E90606;
+}
+
+/*---------- order ----------*/
+.harpseal .btn_order {
+	position:relative;
+	margin: 0 auto 20px;
+	padding: 10px;
+	width: 922px;
+	border:3px solid #4CCCBF;
+	border-radius: 1em;
+	background-color: #FFF;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.harpseal .btn_order li {
+	float: left;
+	position: relative;
+	padding: 5px 5px 0;
+	width: 169px;
+	height: 180px;
+	border-left: 1px dashed #DAD8D8;
+	background-size: contain;
+}
+.harpseal .btn_order li a {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	margin: auto;
+	width: 176px;
+	height: 54px;
+	text-align: center;
+}
+.harpseal .btn_order li.btn_order__smpl {
+	margin-bottom: 10px;
+	background: url(../../image/harp_seal_oil/order_sumple_bg.png) center top no-repeat;
+}
+.harpseal .btn_order li.btn_order__01 {
+	background: url(../../image/harp_seal_oil/order_01_bg.png) center top no-repeat;
+	padding-left: 0;
+	border: none;
+}
+.harpseal .btn_order li.btn_order__02 {
+	background: url(../../image/harp_seal_oil/order_02_bg.png) center top no-repeat;
+}
+.harpseal .btn_order li.btn_order__03 {
+	background: url(../../image/harp_seal_oil/order_03_bg.png) center top no-repeat;
+}
+.harpseal .btn_order li.btn_order__04 {
+	background: url(../../image/harp_seal_oil/order_04_bg.png) center top no-repeat;
+}
+.harpseal .btn_order li.btn_order__05 {
+	background: url(../../image/harp_seal_oil/order_05_bg.png) center top no-repeat;
+}
+/*--- order_teiki_txt ---*/
+.harpseal .btn_order li.order_teiki_txt {
+	margin:0 auto 10px;
+	padding: 5px 5px 0;
+	width: 237px;
+	text-align: center;
+	border: none;
+}
+.harpseal .btn_order li.order_teiki_txt img {
+	max-width: 243px;
+}
+/*--- order_teiki_btn ---*/
+.harpseal .btn_order li.order_teiki_btn {
+	margin-bottom: 10px;
+	width: 457px;
+	background: url(../../image/harp_seal_oil/order_teiki_bg.png) left 5px no-repeat;
+	background-size: contain;
+	border: none;
+}
+.harpseal .btn_order li.order_teiki_btn a {
+	left: 48%;
+	width: 236px;
+	height: 59px;
+}
+@media screen and (max-width:640px) {
+	.harpseal .btn_order {
+		width: 94%;
+	}
+	.harpseal .btn_order li {
+		float: none;
+		margin: 0 auto 10px;
+		border: none;
+	}
+	.harpseal .btn_order li a img {
+		max-width: 171px;
+	}
+	.harpseal .btn_order li.order_teiki_txt {
+		margin: 0 auto;
+	}
+	.harpseal .btn_order li.order_teiki_btn {
+		padding: 0;
+		width: 98%;
+	}
+	.harpseal .btn_order li.order_teiki_btn a {
+		left: 0;
+		width: 100%;
+	}
+	.harpseal .btn_order li.order_teiki_btn a img {
+		max-width: 236px;
+	}
+}
+
+
+/*---------- common_one_column customize ----------*/
+.teiki_detailsBox {
+	border:3px solid #C3EEEE;
+	padding:3%;
+	width: 88%;
+}
+.teiki_detailsBox_ttBox_tt, .teiki_detailsBox_ttBox_sub { color:#0058A8;}

@@ -1,0 +1,69 @@
+<!--user stylesheets-->
+
+<style type="text/css">
+/**wrapper**/
+#head_wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+/*------------   end head style   ------------*/
+
+
+
+/*------------   start foot style   ------------*/
+
+/**wrapper & copyright**/
+#foot_wrapper {
+	width: 800px;
+	margin: 0 auto 40px auto;
+}
+
+#foot {
+	margin: 20px 0;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+#foot p.copy {
+	font-weight: bold;
+	float: left;
+	font-size: 11px;
+}
+
+#foot p.powerd { float: right; }
+
+
+
+/**information area**/
+
+#usr_footer { background: #CCC; }
+
+#usr_footer a {
+	color: #0000ff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#usr_footer a:hover { color: #F60; }
+
+#usr_footer a img { border-bottom: none; }
+
+#usr_footer table td {
+	background-color: #FFF;
+	vertical-align: top;
+}
+
+#usr_footer table p { margin: 10px; }
+
+#usr_footer strong {
+	font-weight: bold;
+	color: #C70000;
+	line-height: 20px;
+}
+
+#usr_footer .right { text-align: right; }
+
+</style>
+
+<!--user stylesheets-->

@@ -1,0 +1,502 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/*======================================
+  エミューの雫　クリスタル石鹸
+========================================*/
+/*---------- common rule ----------*/
+
+p::selection, span::selection, em::selection {
+background: #fff900;
+}
+p::-moz-selection, span::-moz-selection, em::-moz-selection {
+background: #fff900;
+}
+em {
+	background: #fff900;
+}
+em::selection {
+	color: #009fe9;
+}
+em::-moz-selection {
+	color: #009fe9;
+}
+
+
+/*--- yajirushi ---*/
+.yajirushi_ylw, .yajirushi_ble {
+	margin: 15px auto 30px;
+	width: 100%;
+	height: auto;
+	min-height: 76px;
+}
+@media screen and (max-width:640px) {
+	.yajirushi_ylw, .yajirushi_ble {
+	min-height: 56px;
+	}
+}
+.yajirushi_ylw {
+	background: url(../../image/bifilact/yajirushi_ylw.png) center top no-repeat;
+	background-size: contain;
+}
+.yajirushi_ble {
+	background: url(../../image/bifilact/yajirushi_ble.png) center top no-repeat;
+	background-size: contain;
+}
+
+/*---------- title ----------*/
+.title_h3__cs {
+	clear: both;
+	margin:0 auto;
+	padding:40px 0 50px;
+	text-align: center;
+}
+
+/*--- box ---*/
+.crystalsoap .container01 {
+	padding: 0 10px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*---------- contents ----------*/
+.crystalsoap {
+	background:#FFF;
+}
+.crystalsoap .topimg_head {
+	padding-bottom:10px;
+	background-color:#f8f4e6;
+	font-size:14px;
+	font-weight: normal;
+	color:#a08f8d;
+	text-align:center;
+}
+.crystalsoap .topimg {
+	margin-bottom:10px;
+}
+.crystalsoap .topimg img {
+	width:100%;
+}
+
+
+
+
+/*--- txtarea_box01 ---*/
+/* .crystalsoap .txtarea_box01 {
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	width: 100%;
+	max-width: 780px;
+}
+.crystalsoap .txtarea_box01 figure {
+	float: left;
+	margin: 0 auto;
+	width: 380px;
+	text-align: center;
+}
+.crystalsoap .txtarea_box01 figure img {
+	margin: 0 auto 1.4em;
+	max-width: 380px;
+}
+.crystalsoap .txtarea_box01 .txtarea {
+	float: left;
+	margin: 0 auto;
+	padding-left: 50px;
+	width: 350px;
+	line-height: 2em;
+}
+.crystalsoap .txtarea_box01 .txtarea p {
+	margin: 0 0 1.4em;
+}
+@media screen and (max-width:640px) {
+	.crystalsoap .txtarea_box01 figure,
+	.crystalsoap .txtarea_box01 .txtarea {
+		float: none;
+		width:auto;
+	}
+	.crystalsoap .txtarea_box01 .txtarea {
+		padding: 0;
+	}
+	.crystalsoap .txtarea_box01 figure img {
+		max-width:280px;
+	}
+} */
+
+/* .crystalsoap .bn_daibiki {
+	margin:0 auto;
+	padding:10px;
+	width: 96%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+-webkit-background-size: 4px 4px;
+-moz-background-size: 4px 4px;
+background-size: 4px 4px;
+background-color: #fff036;
+background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+            color-stop(.25, #FFFFFF), color-stop(.25, transparent),
+            color-stop(.5, transparent), color-stop(.5, #FFFFFF),
+            color-stop(.75, #FFFFFF), color-stop(.75, transparent),
+            to(transparent));
+background-image: -webkit-linear-gradient(-45deg, #FFFFFF 25%, transparent 25%,
+          transparent 50%, #FFFFFF 50%, #FFFFFF 75%,
+          transparent 75%, transparent);
+background-image: -moz-linear-gradient(-45deg, #FFFFFF 25%, transparent 25%,
+          transparent 50%, #FFFFFF 50%, #FFFFFF 75%,
+          transparent 75%, transparent);
+background-image: -ms-linear-gradient(-45deg, #FFFFFF 25%, transparent 25%,
+          transparent 50%, #FFFFFF 50%, #FFFFFF 75%,
+          transparent 75%, transparent);
+background-image: -o-linear-gradient(-45deg, #FFFFFF 25%, transparent 25%,
+          transparent 50%, #FFFFFF 50%, #FFFFFF 75%,
+          transparent 75%, transparent);
+background-image: linear-gradient(-45deg, #FFFFFF 25%, transparent 25%,
+          transparent 50%, #FFFFFF 50%, #FFFFFF 75%,
+          transparent 75%, transparent);
+	font-size:14px;
+	color:#5B4D4D;
+	text-shadow:3px 3px 1px #FFF;
+}
+.crystalsoap .bn_daibiki img {
+	padding-right:5px;
+	width:30px;
+	height:19px;
+}
+.crystalsoap .bn_daibiki span {
+	font-weight:bold;
+	color:#E90606;
+} */
+
+
+/*---------- order ----------*/
+.orderBtn_teiki a,
+.orderList a {
+    -webkit-transition: 0.2s ease-in-out;
+       -moz-transition: 0.2s ease-in-out;
+         -o-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+}
+.orderBtn_teiki a:hover,
+.orderList a:hover {
+	opacity: 0.8;
+}
+.crystalsoap .orderBtn_teiki {
+	margin: 0 auto;
+	width:100%;
+	max-width: 908px;
+}
+.crystalsoap .orderBtn_teiki img {
+	width:100%;
+}
+.crystalsoap .orderList {
+    margin: 0 auto;
+	width:100%;
+	max-width: 908px;
+}
+.crystalsoap .orderList li {
+    float:left;
+    position:relative;
+    padding-right: 7px;
+    width:298px;
+    height:209px;
+}
+.crystalsoap .orderList li img {
+	width:100%;
+}
+.crystalsoap .orderList .orderList_last {
+    padding-right: 0px;
+}
+.crystalsoap .orderInfo {
+	padding:10px;
+	text-align:center;
+}
+.crystalsoap .orderInfo img {
+	width:100%;
+	max-width:848px;
+	max-height:64px;
+}
+@media screen and (max-width:640px) {
+	.crystalsoap .orderBtn-teiki {
+		margin-bottom:8px;
+	}
+	.crystalsoap .orderList li {
+		float:none;
+		margin:0 auto 5px;
+		padding:0;
+	}
+
+}
+
+
+/*---------- common_one_column customize ----------*/
+#one_column_flow {
+	margin-top: 15px;
+	background: none;
+}
+#one_column_flow .flow_con .flowbox01 h4, .flow_clr {
+	color: #009fe9;
+}
+#one_column_flow .flow_con .flowbox01, #one_column_flow .flow_con .flowbox02, #one_column_flow .flow_con .flowbox03 {
+	border: 1px solid #CCC;
+}
+#one_column_flow .flow_con .flowbox02 {
+	margin-top: 0;
+}
+.flowbox04 {
+	margin-bottom: 50px;
+}
+
+
+
+
+/*---------- contents add css ----------*/
+/*--- background ---*/
+.bg-blueDrop {
+	background: url(../../image/crystalsoap/s4_bg.png) left top repeat;
+}
+.bg-pinkDrop {
+	background: url(../../image/crystalsoap/s3_bg.png) left top repeat;
+}
+.bg-greenPeper {
+	background: url(../../image/crystalsoap/s6_bg.png) left top repeat;
+}
+
+/*--- animation ---*/
+.effect .effect_add {
+  transition: .5s;
+  transition-delay: .5s;
+}
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:3s;
+ -ms-animation-duration:3s;
+ animation-duration:3s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+/*-- s8 */
+.movieBox {
+	margin:0 auto;
+	padding-bottom:30px;
+	width:100%;
+	max-width:800px;
+	height:auto;
+}
+.movieBox li {
+	margin:0 auto;
+	width:300px;
+	height:300px;
+	text-align: center;
+}
+.movieBox li p {
+	font-weight: bold;
+	padding: 10px 0 5px;
+	text-align: center;
+}
+.movieBox-blue li {
+	background: url(../../image/crystalsoap/s8_bg.png) center top no-repeat;
+	background-size:100% auto;
+	color:#3E99D5;
+}
+.movieBox-pink li {
+	background: url(../../image/crystalsoap/s9_bg.png) center top no-repeat;
+	background-size:100% auto;
+	color:#EA5F67;
+}
+.vjs-big-play-button {
+	display:none !important;
+}
+/*-- s2 */
+#s2 {
+	position:relative;
+	padding:30px 0;
+	width: 100%;
+	background: #FFF;
+}
+#s2 .n1 {
+	margin:0 auto;
+	padding:0;
+	width:60%;
+	max-width:252px;
+	text-align:center;
+}
+#s2 .n2 {
+	top: 50px;
+	left: -280px;
+	position: absolute;
+	width: 628px;
+	height: 293px;
+}
+#s2 .n3 {
+	padding:30px 0;
+	width:100%;
+	text-align:center;
+}
+/*-- s3 */
+#s3 {
+	position:relative;
+	margin:0 auto;
+	padding:0 10px;
+	width:100%;
+	max-width:920px;
+	background:#FFF;
+	border-top: 1px solid #EA5F67;
+	border-bottom: 1px solid #EA5F67;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#s3::before, #s3::after {
+	content:"";
+	position:absolute;
+	left:0;
+	padding:8px;
+	width: 100%;
+	max-width:920px;
+	background:#FFF;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#s3::before {
+	top:-17px;
+}
+#s3::after {
+	bottom:-17px;
+}
+#s3 .n2 {
+	margin:20px auto;
+	width:100%;
+	text-align:center;
+}
+#s3 .flxBox {
+	max-width:840px;
+}
+#s3 .n3 img {
+	max-width:616px;
+}
+#s3 .n4 img {
+	max-width:288px;
+}
+/*-- s4 */
+#s4 {
+	position:relative;
+	margin:0 auto;
+	padding:0 20px 20px;
+	width:100%;
+	max-width:920px;
+	background:#FFF;
+	border-top: 1px solid #3E99D5;
+	border-bottom: 1px solid #3E99D5;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#s4::before, #s4::after {
+	content:"";
+	position:absolute;
+	left:0;
+	padding:8px;
+	width: 100%;
+	max-width:920px;
+	background:#FFF;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#s4::before {
+	top:-17px;
+}
+#s4::after {
+	bottom:-17px;
+}
+#s4 img {
+	width:100%;
+}
+#s4 .n2 {
+	padding-top:3%;
+	max-width: 288px;
+}
+#s4 .n3 {
+	max-width: 879px;
+}
+#s4 .n4 {
+	max-width: 890px;
+}
+#s5 {
+	margin-bottom:30px;
+	width: 100%;
+}
+#s5 .n2 {
+	padding:0 8%;
+	text-align:center;
+}
+#s5 .n2 img {
+	width:100%;
+}
+#s6 {
+	padding-bottom:3%;
+}
+#s6 dl {
+	width: 92%;
+	margin:0 auto 2%;
+	font-size:120%;
+	line-height:1.4em;
+}
+#s6 dl dt {
+	padding-bottom:2%;
+	color:#FFF;
+	text-shadow:0px 0px 18px rgba(135,160,82,0.65);
+}
+#s6 dl dd {
+	color:#FEFAD1;
+	padding: 0 0 3% 5%;
+	text-shadow:0px 0px 18px rgba(135,160,82,0.65);
+}
+#s7 {
+	margin:0 auto;
+	padding-bottom:8%;
+	width:92%;
+}
+#s7 .flxBox {
+	max-width:840px;
+}
+#s7 .flxBox_col {
+	padding:2%;
+	max-width:213px;
+}
+#s7 .n3 {
+	margin:0 auto;
+	padding-top:5%;
+	max-width:433px;
+	text-align:center;
+}
+@media screen and (max-width:720px) {
+	.movieBox {
+		width:300px;
+	}
+	#s2 .n2 {
+		display:none;
+	}
+}

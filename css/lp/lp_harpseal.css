@@ -1,0 +1,285 @@
+@charset "utf-8";
+/*======================================
+  ハープシールオイル
+========================================*/
+
+/*========================================
+  Header
+  ========================================*/
+.lp_header_harpseal {
+	background: #F22B7A;
+}
+.lp_header_harpseal h1 {
+	font-size:21px;
+	color:#FFF;
+}
+
+/*========================================
+   Contents
+  ========================================*/
+.harpseal .topimg_camp {
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.harpseal .topimg_camp h2 {
+	width:100%;
+	padding-top:66%;
+	background:url(../../image/lp/harp_seal_oil/topimg_camp02.jpg) left top no-repeat;
+	background-size:100% auto;
+	text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.harpseal .topimg_camp .topimg_camp_order a {
+	display:block;
+	margin:0 auto;
+	width:100%;
+	max-width:742px;
+	max-height:155px;
+}
+.harpseal .topimg_camp .topimg_camp_order a img {
+    width: 100%;
+}
+.limit {
+    position:absolute;
+    width: 12%;
+    height: 3%;
+    left:17%;
+    top:73%;
+}
+.limit .limit_mark {
+    background: linear-gradient(transparent 0%, #FCF618 0%);
+}
+.topimg_camp .limit {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+.topimg_camp .limit .limit_year {
+    display: none;
+}
+.topimg_camp .limit .limit_txt {
+    font-size: 13px;
+}
+.topimg_camp .limit .limit_mark {
+    background: none;
+}
+
+@media screen and (max-width:960px) {
+    .harpseal .topimg_camp h2 {
+	background-size:100% auto;
+    }
+    .harpseal .topimg_camp .topimg_camp_order a {
+        width: 90%;
+    }
+    .topimg_camp .limit {
+        top:72.5%;
+        font-size: 1.8vw;
+    }
+    .topimg_camp .limit .limit_txt {
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:880px) {
+    .topimg_camp .limit {
+        top:70.5%;
+    }
+}
+@media screen and (max-width:540px) {
+    .topimg_camp .limit {
+        top:69.5%;
+    }
+}
+@media screen and (max-width:320px) {
+    .topimg_camp .limit {
+        top:68.5%;
+    }
+}
+
+
+/*-------- camp_bn_point --------*/
+.camp_bn_point {
+	margin:0 auto;
+	text-align: center;
+	padding: 10px;
+	width:100%;
+	max-width:805px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.camp_bn_point img {
+	width:100%;
+}
+.camp_bn_point p {
+	padding:5px 15px;
+	font-size:14px;
+}
+@media screen and (max-width:640px) {
+	.camp_bn_point {
+		width: auto !important;
+		text-align:left;
+	}
+	.camp_bn_point br {
+		display:none;
+	}
+}
+/*-------- lp_bn_campaign --------*/
+.lp_bn_campaign {
+	position: relative;
+	margin:0 auto 20px;
+	padding-bottom:0;
+	width: 96%;
+	height: auto;
+	max-width:963px;
+	background:#FFF;
+	border:3px solid #64C2E7;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.lp_bn_campaign > img {
+	width:100%;
+	height:auto;
+}
+.lp_bn_campaign_box01 {
+	float:left;
+	width:56%;
+}
+.lp_bn_campaign_box02 {
+	float:left;
+	width:44%;
+}
+/*----- lp_bn_campaign_box01 -----*/
+.lp_bn_campaign_product01,
+.lp_bn_campaign_product02 {
+	margin: 0 auto;
+	float:left;
+	text-align:center;
+}
+.lp_bn_campaign_product01 {
+	width:43%;
+}
+.lp_bn_campaign_product01 img {
+	max-width:180px;
+	margin-top: 15px;
+}
+.lp_bn_campaign_product02 {
+	position:relative;
+	width:57%;
+	padding: 25px 0 20px;
+}
+.lp_bn_campaign_product02 img {
+	padding-top:0;
+	max-width:282px;
+}
+.lp_bn_campaign_product02 .limit {
+	position:absolute;
+	width: 40%;
+	height: 32%;
+	left:55%;
+	top:62%;
+}
+.lp_bn_campaign_product02 .limit {
+    font-size: 18px;
+	text-align: left;
+    font-weight: bold;
+	line-height: 1.3;
+}
+.lp_bn_campaign_product02 .limit .limit_txt {
+    font-size: 13px;
+}
+.lp_bn_campaign_product02 .limit .limit_mark {
+	background: linear-gradient(transparent 0%, #FCF618 0%);
+}
+@media screen and (max-width:960px) {
+	.lp_bn_campaign_product02 .limit {
+		top:61%;
+	}
+}
+@media screen and (max-width:840px) {
+	.lp_bn_campaign_product02 .limit {
+		top:62.5%;
+	}
+}
+@media screen and (max-width:540px) {
+    .lp_bn_campaign_product02 .limit {
+		top: 63.5%;
+        font-size: 3.4vw;
+    }
+    .lp_bn_campaign_product02 .limit .limit_txt {
+        font-size: 2.2vw;
+    }
+}
+
+/*----- lp_bn_campaign_box02 -----*/
+.lp_bn_campaign_btn {
+}
+.lp_bn_campaign_price img {
+	padding: 5px 0 5px;
+	max-width:375px;
+}
+.lp_bn_campaign_btn img {
+	padding:0 0 0 5px;
+	max-width:375px;
+}
+
+.lp_bn_campaign_info {
+	position:absolute;
+	right:-50px;
+	top:20px;
+	width:148px;
+}
+.lp_bn_campaign_txt {
+	position:absolute;
+	padding:10px;
+	right:0;
+	bottom:0;
+	width:96%;
+	text-align: right;
+	font-size:14px;
+}
+@media screen and (max-width:960px) {
+	.lp_bn_campaign {
+		padding-bottom:0;
+		max-width: 490px;
+	}
+	.lp_bn_campaign_box01,
+	.lp_bn_campaign_box02 {
+		float:none;
+		width: 100%;
+	}
+	.lp_bn_campaign_product01 img {
+		margin-top: 10px;
+		width: 80%;
+	}
+	.lp_bn_campaign_product02 img {
+		padding:0;
+	}
+	.lp_bn_campaign_price,
+	.lp_bn_campaign_btn {
+		text-align: center;
+	}
+	.lp_bn_campaign_info {
+		top:290px;
+	}
+	.lp_bn_campaign_txt {
+		position: relative;
+		text-align: center;
+	}
+}
+@media screen and (max-width:540px) {
+	.lp_bn_campaign_product01,
+	.lp_bn_campaign_product02 {
+		float: none;
+	}
+	.lp_bn_campaign_info {
+		width: 35%;
+		right:0px;
+		top:30px;
+	}
+}

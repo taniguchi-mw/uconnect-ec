@@ -221,8 +221,9 @@ background-image: linear-gradient(-45deg, #FFFFFF 25%, transparent 25%,
 	max-height:64px;
 }
 @media screen and (max-width:640px) {
-	.crystalsoap .orderBtn-teiki {
-		margin-bottom:8px;
+	.crystalsoap .orderBtn_teiki {
+		margin:8px auto;
+		max-width: 298px;
 	}
 	.crystalsoap .orderList li {
 		float:none;

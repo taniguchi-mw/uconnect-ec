@@ -57,7 +57,8 @@ header
 #header h1 {
 	position: absolute;
 	left: 0;
-	bottom: -35px;
+	/* bottom: -15%; */
+	bottom: -40%;
 	width: 100%;
 	background: #F3EFE1;
 	color:#B7A99B;
@@ -282,14 +283,11 @@ box-shadow:0px 0px 4px rgba(110,87,84,0.11);
 	display:none;	
 	}
 
-
-/*
-#header nav#gnavi {
+/*--- headBnr ---*/
+#headBnr {
+	margin:3px auto 0;
+	padding:1px 10px;
 }
-#header nav#gnavi ul {
-}
-#header nav#gnavi ul li a {
-}*/
 
 
 /*======================================

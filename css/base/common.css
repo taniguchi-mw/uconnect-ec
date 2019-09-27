@@ -270,6 +270,27 @@ box-shadow:0px 0px 4px rgba(110,87,84,0.11);
 	left: 0px;
 }
 
+/*--- headBnr ---*/
+#headBnr {
+	padding:1px 0;
+	margin:5px auto;
+	width:100%;
+	max-width:990px;
+	text-align: center;
+	background-color: #F3EFE1;
+}
+#headBnr a:hover {
+	filter: alpha(opacity=80);
+	-khtml-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+#headBnr img {
+	width:49%;
+	min-width:485px;
+	vertical-align:bottom;
+}
+
 /*========================================
    Contents
   ========================================*/

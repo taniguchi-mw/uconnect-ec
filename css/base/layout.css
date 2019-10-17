@@ -413,6 +413,7 @@ h4.title_h4 {
 		margin: 0 10px 15px;
 		padding: 10px;
 		width: auto !important;
+		min-width:300px;
 		border:1px solid #CAC7BD;
 		border-top: none;
 		border-radius: 0 0 5px 5px;
@@ -1733,12 +1734,17 @@ h4.title_h4 {
 	font-weight: bold;
 	text-align: left;
 }
-.itemlist_box .itemlist_box_clm .lbox p.link_about a {
+.itemlist_box .itemlist_box_clm .lbox p.link_about a, .link_about-bottom a {
 	padding:0 0 0 13px;
 background: url(../../image/common/link_s2.png) 0px 50% no-repeat;
 }
-.itemlist_box .itemlist_box_clm .lbox p.link_about a:hover {
+.itemlist_box .itemlist_box_clm .lbox p.link_about a:hover, .link_about-bottom a:hover {
 background: url(../../image/common/link_s2_o.png) 2px 50% no-repeat;
+}
+.link_about-bottom {
+	clear:both;
+	font-weight: bold;
+	text-align: center;
 }
 .itemlist_box .itemlist_box_clm .lbox img {
 	width: 100%;
@@ -1839,6 +1845,15 @@ background: url(../../image/common/link_s2_o.png) 2px 50% no-repeat;
 	max-width: 185px;
 	vertical-align: bottom;
 }
+.itemlist_box ul li p.order_btn-pouch {
+	margin-bottom: 0;
+	padding: 3px 0 0;	
+}
+.itemlist_box ul li p.order_txt_pouch {
+	margin-bottom: 6px;
+	font-size: 12px;
+	text-align: center;
+}
 @media screen and (max-width:640px) {
 	.itemlist_box {
 		margin: 0 auto;
@@ -1885,6 +1900,9 @@ background: url(../../image/common/link_s2_o.png) 2px 50% no-repeat;
 	}
 	.itemlist_box .itemlist_box_clm .lbox a img {
 		padding-bottom: 0;
+	}
+	.itemlist_box .odr_info {
+		padding: 3px;
 	}
 }
 
